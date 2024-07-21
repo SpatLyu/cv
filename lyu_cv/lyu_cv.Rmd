@@ -1,12 +1,12 @@
 ---
 name: Wenbo Lv
 position: "undergraduate"
-pronouns: he/him
-www: spatlyu.github.io
-email: "lyu.geosocial@gmail.com"
 github: SpatLyu
+www: spatlyu.github.io
 orcid: 0009-0002-6003-3800
-date: "`r format(Sys.time(), '%B %Y')`"
+email: "lyu.geosocial@gmail.com"
+address: "Xi'an, Shaanxi"
+date: ""
 output: vitae::hyndman
 ---
 
@@ -17,10 +17,10 @@ library(vitae)
 
 # Some stuff about me
 
- * I am deeply interested in developing spatial analysis methods based on spatial relationships (such as spatial dependence, spatial heterogeneity, geographical similarity).
- * I am proficient in R language data analysis, statistical modeling, and R package development.
- * I am familiar with implementing computationally complex statistical algorithms using C++, and I can flexibly call upon torch.
- 
+-   I am deeply interested in developing spatial analysis methods based on spatial relationships (such as spatial dependence, spatial heterogeneity, geographical similarity).
+-   I am proficient in R language data analysis, statistical modeling, and R package development.
+-   I am familiar with implementing computationally complex statistical algorithms using C++, and I can flexibly call upon torch.
+
 # Education
 
 ```{r}
@@ -32,13 +32,58 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
+# Honor
+
+```{r}
+tribble(
+  ~ Awards, ~ Date,
+  "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
+  "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
+  "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10"
+) %>%
+  detailed_entries(Awards,Date)
+```
+
+# Developed Spatial Analysis Toolkit
+
+| Package       | Description                                                   | Source Code                                | Language       |
+|---------------|---------------------------------------------------------------|--------------------------------------------|----------------|
+| gdverse       | Family of geographical detector models in R                   | <https://github.com/SpatLyu/gdverse>       | R, C++, Python |
+| geocomplexity | Mitigate Spatial Bias through Geographical Complexity         | <https://github.com/SpatLyu/geocomplexity> | C++, Python, C |
+| spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
+| tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
+| SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>       | Python         |
+| sptorch       | Spatial neural network methods based on torch for R           | <https://github.com/SpatLyu/sptorch>       | R              |
+
+# In research
+
+```{r}
+tribble(
+  ~ Name, ~ Role, ~ Date, ~ Details,
+  "Geocomplexity mitigates spatial bias", "Leader", "",
+  "Considering the Complexity of Spatial Data in Spatial Data Analysis to Improve Modeling Accuracy",
+  "sptorch - An integrated neural network based framework for spatial analysis", 
+  "Leader", "", "Design and implementation of a general-purpose GeoAI tool utilizing torch"
+) %>%
+  detailed_entries(Name, Role, ,Date ,Details)
+```
+
+# Unpublished
+
+```{r}
+tribble(
+  ~ Name, ~ Role,
+  "gdverse : An R package for spatial stratified heterogeneity modeling through geographical detectors", "First Author",
+  "Distinguishing the impacts and gradient effects of climate change and human activities on vegetation cover in the Weihe River Basin , China", "First Author"
+) %>%
+  detailed_entries(Name, Role)
+```
 
 # Publications
 
 ```{r}
-library(dplyr)
-knitr::write_bib(c("vitae", "tibble"), "packages.bib")
-
-bibliography_entries("packages.bib") %>%
-  arrange(desc(author$family), issued)
+bibliography_entries("lyu.bib")
 ```
+
+
