@@ -40,7 +40,8 @@ tribble(
   "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
   "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
   "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
-  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10"
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
+  "National University Student Innovation and Entrepreneurship Training Program Qualified Completion", "2024.06"
 ) %>%
   detailed_entries(Awards,Date)
 ```
@@ -73,11 +74,11 @@ tribble(
 
 ```{r}
 tribble(
-  ~ Name, ~ Role,
-  "gdverse : An R package for spatial stratified heterogeneity modeling through geographical detectors", "First Author",
-  "Distinguishing the impacts and gradient effects of climate change and human activities on vegetation cover in the Weihe River Basin , China", "First Author"
+  ~ Name, ~ Role, ~ Status,
+    "Distinguishing the impacts and gradient effects of climate change and human activities on vegetation cover in the Weihe River Basin , China", "First Author", "Under revision",
+  "gdverse : An R package for spatial stratified heterogeneity modeling through geographical detectors", "First Author", "In writing"
 ) %>%
-  detailed_entries(Name, Role)
+  detailed_entries(Name, Role, Status)
 ```
 
 # Publications
