@@ -17,7 +17,7 @@ library(vitae)
 
 # Some stuff about me
 
--   I am deeply interested in developing spatial analysis methods based on spatial relationships (such as spatial dependence, spatial heterogeneity, geographical similarity).
+-   I am deeply interested in developing new spatial analysis methods based on spatial relationships (such as spatial dependence, spatial heterogeneity, geographical similarity) to support urban sustainability and climate change mitigation.
 -   I am proficient in R language data analysis, statistical modeling, and R package development.
 -   I am familiar with implementing computationally complex statistical algorithms using C++, and I can flexibly call upon torch.
 
@@ -64,10 +64,10 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Date, ~ Details,
+  "Extraction of Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
+  "Combining advanced spatial sampling and unsupervised algorithms to automatically construct sample sets, and then using geographical neural networks weighted logistic regression to extract urban spatial boundaries",
   "Geocomplexity mitigates spatial bias", "Leader", "",
-  "Considering the Complexity of Spatial Data in Spatial Data Analysis to Improve Modeling Accuracy",
-  "sptorch - An integrated neural network based framework for spatial analysis", 
-  "Leader", "", "Design and implementation of a general-purpose GeoAI tool utilizing torch"
+  "Considering the Complexity of Spatial Data in Spatial Data Analysis to Improve Modeling Accuracy"
 ) %>%
   detailed_entries(Name, Role, ,Date ,Details)
 ```
