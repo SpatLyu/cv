@@ -49,13 +49,15 @@ tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package       | Description                                                   | Source Code                                | Language       |
-|---------------|---------------------------------------------------------------|--------------------------------------------|----------------|
+|--------------|---------------------------|------------------|--------------|
 | gdverse       | Family of geographical detector models in R                   | <https://github.com/SpatLyu/gdverse>       | R, C++, Python |
 | geocomplexity | Mitigate Spatial Bias through Geographical Complexity         | <https://github.com/SpatLyu/geocomplexity> | C++, Python, C |
 | spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
 | tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
 | SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>       | Python         |
 | sptorch       | Spatial neural network methods based on torch for R           | <https://github.com/SpatLyu/sptorch>       | R              |
+| sdsfun        | Functions for Spatial Data Science                            | <https://github.com/SpatLyu/sdsfun>        | R              |
+| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/SpatLyu/geocn>         | R              |
 
 # In research
 
@@ -86,5 +88,3 @@ tribble(
 ```{r}
 bibliography_entries("lyu.bib")
 ```
-
-
