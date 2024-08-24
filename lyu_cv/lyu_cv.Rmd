@@ -52,7 +52,7 @@ tribble(
 |---------------|---------------------------------------------------------------|--------------------------------------------|----------------|
 | gdverse       | Family of geographical detector models in R                   | <https://github.com/ausgis/gdverse>        | R, C++, Python |
 | geocomplexity | Mitigate Spatial Bias through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, Python, C |
-| geosimilarity | Geographically Optimal Similarity                             | <https://ausgis.github.io/geosimilarity/>  | R              |
+| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
 | spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
 | tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
 | SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>       | Python         |
