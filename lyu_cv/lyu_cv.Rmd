@@ -58,8 +58,8 @@ tribble(
 | SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>       | Python         |
 | qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
 | Rsagacmd      | A package for linking R with the open-source SAGA-GIS         | <https://github.com/stevenpawley/Rsagacmd> | R              |
-| sdsfun        | Functions for Spatial Data Science                            | <https://github.com/SpatLyu/sdsfun>        | R              |
-| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/SpatLyu/geocn>         | R              |
+| sdsfun        | Functions for Spatial Data Science                            | <https://github.com/stscl/sdsfun>        | R              |
+| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>         | R              |
 
 # In research
 
