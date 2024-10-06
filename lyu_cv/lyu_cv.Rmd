@@ -80,9 +80,9 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-    "Distinguishing the impacts and gradient effects of climate change and human activities on vegetation cover in the Weihe River Basin , China", "First Author", "Under revision",
+    "Generalized Geographical Detector", "First Author", "In writing",
   "Spatial stratified heterogeneity analysis enabled by
-geographical detectors:the gdverse package", "First Author", "In writing"
+geographical detectors: the gdverse package", "First Author", "In writing"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
