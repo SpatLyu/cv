@@ -32,6 +32,12 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
+# Publications
+
+```{r}
+bibliography_entries("lyu.bib")
+```
+
 # Honor
 
 ```{r}
@@ -45,22 +51,6 @@ tribble(
 ) %>%
   detailed_entries(Awards,Date)
 ```
-
-# Developed Spatial Analysis Toolkit
-
-| Package       | Description                                                   | Source Code                                | Language       |
-|------------------|-------------------|------------------|------------------|
-| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, Python, C |
-| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
-| esp        | Enhanced Stratified Power                            | <https://github.com/ausgis/esp>        | R, C++              |
-| sdsfun        | Spatial Data Science Complementary Features                            | <https://github.com/stscl/sdsfun>        | R, C++              |
-| gdverse       | Analysis of Spatial Stratified Heterogeneity                   | <https://github.com/stscl/gdverse>        | R, C++, Python |
-| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>         | R              |
-| spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
-| tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
-| SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>       | Python         |
-| qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
-| Rsagacmd      | A package for linking R with the open-source SAGA-GIS         | <https://github.com/stevenpawley/Rsagacmd> | R              |
 
 # In research
 
@@ -86,8 +76,20 @@ tribble(
   detailed_entries(Name, Role, Status)
 ```
 
-# Publications
+# Developed Spatial Analysis Toolkit
 
-```{r}
-bibliography_entries("lyu.bib")
-```
+| Package       | Description                                                   | Source Code                                | Language       |
+|---------------|---------------------------------------------------------------|--------------------------------------------|----------------|
+| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, Python, C |
+| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
+| esp           | Enhanced Stratified Power                                      | <https://github.com/ausgis/esp>            | R, C++         |
+| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
+| gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
+| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>           | R              |
+| spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
+| tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
+| SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>       | Python         |
+| qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
+| Rsagacmd      | A package for linking R with the open-source SAGA-GIS         | <https://github.com/stevenpawley/Rsagacmd> | R              |
+
+
