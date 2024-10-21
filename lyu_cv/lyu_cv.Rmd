@@ -17,9 +17,9 @@ library(vitae)
 
 # Some stuff about me
 
--   I am deeply interested in developing new spatial analysis methods based on spatial relationships (such as spatial dependence, spatial heterogeneity, geographical similarity) to support urban sustainability and climate change mitigation.
--   I am proficient in R language data analysis, statistical modeling, and R package development.
--   I am familiar with implementing computationally complex statistical algorithms using C++, and I can flexibly call upon torch.
+- I am passionate about developing innovative spatial analysis methods that leverage spatial relationships, such as spatial dependence, spatial heterogeneity, and geographical similarity, to advance urban sustainability and climate change mitigation efforts.
+- I am proficient in data analysis, statistical modeling, and developing R packages, as well as open-source analytical software using R, C++, and Python.
+- I have experience implementing complex statistical algorithms in C++ and can efficiently integrate torch for machine learning applications.
 
 # Education
 
@@ -70,8 +70,8 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-  "Generalized Geographical Detector", "First Author", "In writing",
-  "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detectors", "First Author", "In writing"
+  "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detectors", "First Author", "In writing",
+  "Generalized Geographical Detector", "First Author", "In writing"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
@@ -80,7 +80,7 @@ tribble(
 
 | Package       | Description                                                   | Source Code                                | Language       |
 |---------------|---------------------------------------------------------------|--------------------------------------------|----------------|
-| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, Python, C |
+| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C |
 | geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
 | esp           | Enhanced Stratified Power                                      | <https://github.com/ausgis/esp>            | R, C++         |
 | sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
