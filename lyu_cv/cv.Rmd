@@ -35,7 +35,7 @@ tribble(
 # Publications
 
 ```{r}
-bibliography_entries("lyu.bib")
+bibliography_entries("lyu_publications.bib")
 ```
 
 # Honor
