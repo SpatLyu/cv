@@ -57,10 +57,10 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Date, ~ Details,
-  "Extraction of Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
-  "Combining advanced spatial sampling and unsupervised algorithms to automatically construct sample sets, and then using geographical neural networks weighted logistic regression to extract urban spatial boundaries",
-  "Geocomplexity mitigates spatial bias", "Leader", "",
-  "Considering the Complexity of Spatial Data in Spatial Data Analysis to Improve Modeling Accuracy"
+  "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
+  "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries",
+  "Geocomplexity Mitigates Spatial Bias", "Leader", "",
+  "Considering the complexity inherent in spatial data to improve modeling accuracy by reducing spatial bias"
 ) %>%
   detailed_entries(Name, Role, ,Date ,Details)
 ```
@@ -71,7 +71,8 @@ tribble(
 tribble(
   ~ Name, ~ Role, ~ Status,
   "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detectors", "First Author", "In writing",
-  "Generalized Geographical Detector", "First Author", "In writing"
+  "Generalized Geographical Detector", "First Author", "In writing",
+  "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
