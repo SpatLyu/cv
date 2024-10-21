@@ -78,13 +78,14 @@ tribble(
 
 # Developed Spatial Analysis Toolkit
 
-| Package       | Description                                                   | Source Code                                | Language       |
-|---------------|---------------------------------------------------------------|--------------------------------------------|----------------|
-| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C |
-| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
-| esp           | Enhanced Stratified Power                                      | <https://github.com/ausgis/esp>            | R, C++         |
-| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
+| Package        | Description                                                   | Source Code                                | Language       |
+|-----------------|----------------------------------------------------------------|------------------------------------------------------|---------------------|
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
+| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C |
+| esp           | Enhanced Stratified Power                                     | <https://github.com/ausgis/esp>            | R, C++         |
+| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
+| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
+| GD | Geographical Detectors for Assessing Spatial Factors                     | <https://github.com/ausgis/GD>  | R              |
 | geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>           | R              |
 | spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
 | tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
