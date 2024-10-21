@@ -79,7 +79,7 @@ tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package        | Description                                                   | Source Code                                | Language       |
-|-----------------|----------------------------------------------------------------|------------------------------------------------------|---------------------|
+|-----------------|---------------------------------------------------------|------------------------------------------------------|---------------------|
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
 | geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C |
 | esp           | Enhanced Stratified Power                                     | <https://github.com/ausgis/esp>            | R, C++         |
