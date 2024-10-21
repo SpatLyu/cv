@@ -58,9 +58,7 @@ tribble(
 tribble(
   ~ Name, ~ Role, ~ Date, ~ Details,
   "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
-  "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries",
-  "Geocomplexity Mitigates Spatial Bias", "Leader", "",
-  "Considering the complexity inherent in spatial data to improve modeling accuracy by reducing spatial bias"
+  "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries"
 ) %>%
   detailed_entries(Name, Role, ,Date ,Details)
 ```
