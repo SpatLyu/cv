@@ -52,6 +52,19 @@ tribble(
   detailed_entries(Awards,Date)
 ```
 
+# Unpublished
+
+```{r}
+tribble(
+  ~ Name, ~ Role, ~ Status,
+  "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detectors", "First Author", "In writing",
+  "Spatially Explicit Stratified Power (SESP)", "First Author", "In writing",
+    "An Interpretable Stratified Power Model", "First Author", "In writing",
+  "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
+) %>%
+  detailed_entries(Name, Role, Status)
+```
+
 # In research
 
 ```{r}
@@ -61,18 +74,6 @@ tribble(
   "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries"
 ) %>%
   detailed_entries(Name, Role, ,Date ,Details)
-```
-
-# Unpublished
-
-```{r}
-tribble(
-  ~ Name, ~ Role, ~ Status,
-  "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detectors", "First Author", "In writing",
-  "Generalized Geographical Detector", "First Author", "In writing",
-  "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
-) %>%
-  detailed_entries(Name, Role, Status)
 ```
 
 # Developed Spatial Analysis Toolkit
