@@ -59,7 +59,7 @@ tribble(
   ~ Name, ~ Role, ~ Status,
   "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detector models", "First Author", "In writing",
   "Spatially Explicit Stratified Power (SESP)", "First Author", "In writing",
-    "An Interpretable Stratified Power Model", "First Author", "In writing",
+  "An Interpretable Stratified Power Model", "First Author", "In writing",
   "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
 ) %>%
   detailed_entries(Name, Role, Status)
