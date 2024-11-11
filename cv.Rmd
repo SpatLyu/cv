@@ -83,9 +83,9 @@ tribble(
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
 | sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>            | R, C++         |
 | geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C |
-| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
 | geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
 | GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>             | R              |
+| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
 | geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>           | R              |
 | qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
 | spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
