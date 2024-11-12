@@ -57,7 +57,7 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-  "gdverse: An R package facilitating spatial stratified heterogeneity analysis with geographical detector models", "First Author", "Submitting to TGIS",
+  "gdverse: An R package for spatial stratified heterogeneity family", "First Author", "Submitting to TGIS",
   "On the role of explicit spatial information in stratified heterogeneity", "First Author", "In writing",
   "A correlation indicator based on spatial patterns", "First Author", "In writing",
   "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
