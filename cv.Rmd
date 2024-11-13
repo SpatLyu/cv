@@ -83,6 +83,7 @@ tribble(
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
 | sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>            | R, C++         |
 | geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C |
+| cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/ausgis/cisp>           | R              |
 | geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
 | GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>             | R              |
 | sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
