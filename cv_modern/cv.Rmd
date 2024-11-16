@@ -76,23 +76,37 @@ tribble(
   detailed_entries(Name, Role, Date, Details)
 ```
 
-<!-- # Developed Spatial Analysis Toolkit -->
+# Developed Spatial Analysis Toolkit
 
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ Package, ~ Description, ~ Source, ~ Language, -->
-<!--   "gdverse", "Analysis of Spatial Stratified Heterogeneity", "https://github.com/stscl/gdverse", -->
-<!--   "R, C++, Python", -->
-<!--   "sesp", "Spatially Explicit Stratified Power", "https://github.com/stscl/sesp", "R, C++", -->
-<!--   "geocomplexity","Mitigate Spatial Bias Through Geographical Complexity","https://github.com/ausgis/geocomplexity","C++, R, C", -->
-<!--   "cisp","A Correlation Indicator Based On Spatial Patterns","https://github.com/stscl/cisp","R", -->
-<!--   "geosimilarity","Geographically Optimal Similarity","https://github.com/ausgis/geosimilarity","R", -->
-<!--   "GD","Geographical Detectors for Assessing Spatial Factors","https://github.com/ausgis/GD","R", -->
-<!--   "sdsfun","Spatial Data Science Complementary Features","https://github.com/stscl/sdsfun","R, C++", -->
-<!--   "geocn","Loads Spatial Data Sets of China","https://github.com/stscl/geocn","R", -->
-<!--   "qgisprocess","R package to use QGIS processing algorithms","https://github.com/r-spatial/qgisprocess","R", -->
-<!--   "spEcula","Spatial Prediction Methods In R","https://github.com/SpatLyu/spEcula","R", -->
-<!--   "tidyrgeoda","A tidy interface for rgeoda","https://github.com/SpatLyu/tidyrgeoda","R" -->
-<!-- ) %>% -->
-<!--   detailed_entries(Description, Package,  Source, Language) -->
-<!-- ``` -->
+- **[gdverse](https://github.com/stscl/gdverse)**  
+  Provides tools for analyzing *Spatial Stratified Heterogeneity* (SSH), integrating advanced statistical methods to assess spatial patterns effectively. Developed using **R**, **C++**, and **Python**.  
+
+- **[sesp](https://github.com/stscl/sesp)**  
+  Implements the *Spatially Explicit Stratified Power* model, a robust framework for spatial analysis combining stratification and statistical power. Written in **R** and **C++**.  
+
+- **[geocomplexity](https://github.com/ausgis/geocomplexity)**  
+  Focuses on mitigating spatial biases by leveraging geographical complexity. Combines computational efficiency with flexibility, developed in **C++**, **R**, and **C**.  
+
+- **[cisp](https://github.com/stscl/cisp)**  
+  Introduces a novel *Correlation Indicator Based on Spatial Patterns* for measuring spatial correlations with high precision. Written in **R**.  
+
+- **[geosimilarity](https://github.com/ausgis/geosimilarity)**  
+  Provides methods for calculating *Geographically Optimal Similarity*, enabling better spatial predict. Developed in **R**.  
+
+- **[GD](https://github.com/ausgis/GD)**  
+  Implements *Geographical Detectors*, a toolkit for assessing spatial factors influencing heterogeneity. Fully developed in **R**.  
+
+- **[sdsfun](https://github.com/stscl/sdsfun)**  
+  Adds complementary features for *Spatial Data Science*, providing user-friendly functionalities for geospatial research. Developed using **R** and **C++**.  
+
+- **[geocn](https://github.com/stscl/geocn)**  
+  Simplifies the process of loading and managing spatial datasets of China, supporting research with localized datasets. Developed in **R**.  
+
+- **[qgisprocess](https://github.com/r-spatial/qgisprocess)**  
+  Offers an **R** interface to *QGIS processing algorithms*, enabling seamless integration of QGIS functionalities into R workflows.  
+
+- **[spEcula](https://github.com/SpatLyu/spEcula)**  
+  Provides advanced methods for *Spatial Prediction* in **R**, supporting applications ranging from environmental modeling to spatial econometrics.  
+
+- **[tidyrgeoda](https://github.com/SpatLyu/tidyrgeoda)**  
+  Offers a tidy interface for *rgeoda*, bridging geospatial analysis and tidyverse workflows to streamline data handling and modeling in **R**.  

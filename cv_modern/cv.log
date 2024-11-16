@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.16)  16 NOV 2024 16:11
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.16)  16 NOV 2024 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -868,21 +868,23 @@ Package microtype Info: Character `\textgreater ' is missing
 
 ]
 
-[2] (./cv.aux)
+[2]
+
+[3] (./cv.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: 8F0712AECF0850E4A0731FEF0E00D147;605.
+(rerunfilecheck)             Checksum: B6A94F296B8106E29C8CBC4B37AC951D;827.
  ) 
 Here is how much of TeX's memory you used:
- 14103 strings out of 475974
- 225618 string characters out of 5777913
- 662942 words of memory out of 5000000
- 36674 multiletter control sequences out of 15000+600000
+ 14104 strings out of 475974
+ 225654 string characters out of 5777913
+ 663208 words of memory out of 5000000
+ 36675 multiletter control sequences out of 15000+600000
  604910 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 92i,13n,106p,999b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,13n,106p,999b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cv.pdf (2 pages).
+Output written on cv.pdf (3 pages).
