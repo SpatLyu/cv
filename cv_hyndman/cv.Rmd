@@ -17,7 +17,7 @@ library(vitae)
 
 # Some stuff about me
 
-- My research interests focus on **developing innovative spatial analysis methods** that leverage **spatial relationships**, such as *spatial dependence*, *spatial heterogeneity*, and *geographical similarity*, to advance *urban sustainability* and *climate change mitigation* efforts.
+- I am passionate about **developing innovative spatial analysis methods** that leverage **spatial relationships**, such as *spatial dependence*, *spatial heterogeneity*, and *geographical similarity*, to advance *urban sustainability* and *climate change mitigation* efforts.
 - I possess expertise in *data analysis*, *statistical modeling*, and the development of *R packages* and open-source analytical tools utilizing **R**, **C++**, and **Python**.
 - I have contributed to the **development** and **maintenance** of several open-source spatial analysis tools within the R community and remain dedicated to **advancing open-source geospatial analysis software**.
 
