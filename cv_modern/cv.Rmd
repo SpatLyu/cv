@@ -1,0 +1,99 @@
+---
+name: Wenbo 
+surname: Lv
+position: "undergraduate"
+github: SpatLyu
+www: spatlyu.github.io
+orcid: 0009-0002-6003-3800
+email: "lyu.geosocial@gmail.com"
+address: "Xi'an, Shaanxi"
+# date: "`r Sys.Date()`"
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Some stuff about me
+
+- I am passionate about **developing innovative spatial analysis methods** that **leverage spatial relationships**, such as *spatial dependence*, *spatial heterogeneity*, and *geographical similarity*, to advance *urban sustainability* and *climate change mitigation* efforts.
+- I am proficient in *data analysis*, *statistical modeling*, and developing *R packages*, as well as open-source analytical software using **R**, **C++**, and **Python**.
+- I have experience implementing complex statistical algorithms in **C++** and can efficiently integrate **torch** for machine learning applications.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "BSc In Geographic Information Science", "2021-2025", "Shaanxi Normal University", "Xi'an, Shaanxi",
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Publications
+
+```{r}
+bibliography_entries("../lyu_publications.bib")
+```
+
+# Honor
+
+```{r}
+tribble(
+  ~ Awards, ~ Date,
+  "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
+  "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
+  "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
+  "National University Student Innovation and Entrepreneurship Training Program Qualified Completion", "2024.06"
+) %>%
+  detailed_entries(Awards,Date)
+```
+
+# Unpublished
+
+```{r}
+tribble(
+  ~ Name, ~ Role, ~ Status,
+  "gdverse: An R package for spatial stratified heterogeneity family", "First Author", "Submitting to TGIS",
+  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Writing in progress, planning to submit to AAAG",
+  "A correlation indicator based on spatial patterns", "First Author", "Writing in progress, planning to submit to IJGIS",
+  "Geocomplexity Mitigates Spatial Bias", "First Author", "Writing in progress, planning to submit to IJGIS"
+) %>%
+  detailed_entries(Name, Role, Status)
+```
+
+# In research
+
+```{r}
+tribble(
+  ~ Name, ~ Role, ~ Date, ~ Details,
+  "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
+  "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries"
+) %>%
+  detailed_entries(Name, Role, Date, Details)
+```
+
+<!-- # Developed Spatial Analysis Toolkit -->
+
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ Package, ~ Description, ~ Source, ~ Language, -->
+<!--   "gdverse", "Analysis of Spatial Stratified Heterogeneity", "https://github.com/stscl/gdverse", -->
+<!--   "R, C++, Python", -->
+<!--   "sesp", "Spatially Explicit Stratified Power", "https://github.com/stscl/sesp", "R, C++", -->
+<!--   "geocomplexity","Mitigate Spatial Bias Through Geographical Complexity","https://github.com/ausgis/geocomplexity","C++, R, C", -->
+<!--   "cisp","A Correlation Indicator Based On Spatial Patterns","https://github.com/stscl/cisp","R", -->
+<!--   "geosimilarity","Geographically Optimal Similarity","https://github.com/ausgis/geosimilarity","R", -->
+<!--   "GD","Geographical Detectors for Assessing Spatial Factors","https://github.com/ausgis/GD","R", -->
+<!--   "sdsfun","Spatial Data Science Complementary Features","https://github.com/stscl/sdsfun","R, C++", -->
+<!--   "geocn","Loads Spatial Data Sets of China","https://github.com/stscl/geocn","R", -->
+<!--   "qgisprocess","R package to use QGIS processing algorithms","https://github.com/r-spatial/qgisprocess","R", -->
+<!--   "spEcula","Spatial Prediction Methods In R","https://github.com/SpatLyu/spEcula","R", -->
+<!--   "tidyrgeoda","A tidy interface for rgeoda","https://github.com/SpatLyu/tidyrgeoda","R" -->
+<!-- ) %>% -->
+<!--   detailed_entries(Description, Package,  Source, Language) -->
+<!-- ``` -->
