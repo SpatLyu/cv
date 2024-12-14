@@ -43,11 +43,13 @@ bibliography_entries("../lyu_publications.bib")
 ```{r}
 tribble(
   ~ Awards, ~ Date,
+  "Longi Non-Education Major Scholarship", "2024.12",
+  "First Prize in the 13th National University Student GIS Application Skills Competition", "2024.11",
+  "National University Student Innovation and Entrepreneurship Training Program Qualified Completion", "2024.06",
   "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
   "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
   "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
-  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
-  "National University Student Innovation and Entrepreneurship Training Program Qualified Completion", "2024.06"
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10"
 ) %>%
   detailed_entries(Awards,Date)
 ```
