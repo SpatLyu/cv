@@ -84,13 +84,13 @@ tribble(
 |-------------------|-----------------------------------------------------------|------------------------------------------------------------|--------------------|
 | spEDM         | Spatial Empirical Dynamic Modeling                            | <https://github.com/stscl/spEDM>           | C++, R         |
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
-| sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>            | R, C++         |
-| cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/stscl/cisp>            | R              |
 | itmsa   | Information-Theoretic Measures for Spatial Association  |              <https://github.com/stscl/itmsa>          | C++, R         |
-| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C      |
-| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
 | GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>             | R              |
 | sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
+| sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>            | R, C++         |
+| cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/stscl/cisp>            | R              |
+| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C      |
+| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
 | geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>           | R              |
 | qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
 | spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
