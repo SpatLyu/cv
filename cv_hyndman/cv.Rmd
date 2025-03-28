@@ -59,9 +59,8 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-  "gdverse: An R package for spatial stratified heterogeneity family", "First Author", "Submitted to TGIS, currently under revision",
+  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Pending submission",
   "On the role of explicit spatial information in stratified heterogeneity", "First Author", "In writing",
-  "A correlation indicator based on spatial patterns", "First Author", "In writing",
   "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
 ) %>%
   detailed_entries(Name, Role, Status)
