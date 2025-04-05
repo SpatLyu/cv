@@ -67,16 +67,16 @@ tribble(
   detailed_entries(Name, Role, Status)
 ```
 
-# In research
+<!-- # In research -->
 
-```{r}
-tribble(
-  ~ Name, ~ Role, ~ Date, ~ Details,
-  "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
-  "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries"
-) %>%
-  detailed_entries(Name, Role, Date, Details)
-```
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ Name, ~ Role, ~ Date, ~ Details, -->
+<!--   "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "", -->
+<!--   "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries" -->
+<!-- ) %>% -->
+<!--   detailed_entries(Name, Role, Date, Details) -->
+<!-- ``` -->
 
 # Developed Spatial Analysis Toolkit
 
