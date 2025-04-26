@@ -60,13 +60,13 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Transferred to IJGIS",
-  "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
+  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS",
+  # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
   "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
-  "Decomposing Spatial Causality through Mutual Information", 
-  "First Author", "In writing",
-  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "In writing",
-  "Geocomplexity Mitigates Spatial Bias", "First Author", "In writing"
+  "Decomposing spatial causality through mutual information", 
+  "First Author", "Plan",
+  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
+  "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
