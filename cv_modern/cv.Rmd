@@ -17,7 +17,8 @@ library(vitae)
 
 # Some stuff about me
 
-- I am passionate about **developing innovative spatial analysis methods** that leverage **spatial relationships**, such as *spatial dependence*, *spatial heterogeneity*, and *geographical similarity*, to advance *urban sustainability* and *climate change mitigation* efforts.
+- My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
+- Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system* and **Difference-in-Differences (DID)** methods for *event studies*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
 - I possess expertise in *data analysis*, *statistical modeling*, and the development of *R packages* and open-source analytical tools utilizing **R**, **C++**, and **Python**.
 - I have contributed to the **development** and **maintenance** of several open-source spatial analysis tools within the R community and remain dedicated to **advancing open-source geospatial analysis software**.
 
@@ -43,11 +44,13 @@ bibliography_entries("../lyu_publications.bib")
 ```{r}
 tribble(
   ~ Awards, ~ Date,
+  "Longi Non-Education Major Scholarship", "2024.12",
+  "First Prize in the 13th National University Student GIS Application Skills Competition", "2024.11",
+  "National University Student Innovation and Entrepreneurship Training Program Qualified Completion", "2024.06",
   "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
   "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
   "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
-  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
-  "National University Student Innovation and Entrepreneurship Training Program Qualified Completion", "2024.06"
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10"
 ) %>%
   detailed_entries(Awards,Date)
 ```
@@ -57,29 +60,35 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-  "gdverse: An R package for spatial stratified heterogeneity family", "First Author", "Submitting to TGIS",
-  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Writing in progress, planning to submit to AAAG",
-  "A correlation indicator based on spatial patterns", "First Author", "Writing in progress, planning to submit to IJGIS",
-  "Geocomplexity Mitigates Spatial Bias", "First Author", "Writing in progress, planning to submit to IJGIS"
+  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS",
+  # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
+  "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
+  "Decomposing spatial causality through mutual information", 
+  "First Author", "Plan",
+  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
+  "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
 
-# In research
+<!-- # In research -->
 
-```{r}
-tribble(
-  ~ Name, ~ Role, ~ Date, ~ Details,
-  "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "",
-  "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries"
-) %>%
-  detailed_entries(Name, Role, Date, Details)
-```
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ Name, ~ Role, ~ Date, ~ Details, -->
+<!--   "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "", -->
+<!--   "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries" -->
+<!-- ) %>% -->
+<!--   detailed_entries(Name, Role, Date, Details) -->
+<!-- ``` -->
 
 # Developed Spatial Analysis Toolkit
 
+- **[spEDM](https://github.com/stscl/spEDM)**  
+  Inferring causation from spatial cross-sectional data through empirical dynamic modeling (EDM), with methodological extensions including geographical convergent cross mapping, geographical cross mapping cardinality and spatially convergent partial cross mapping, as well as the spatial granger causality. Data I/O is handled at the **R** level, while the rest is fully implemented using **modern C++**. 
+
 - **[gdverse](https://github.com/stscl/gdverse)**  
-  Provides tools for analyzing *Spatial Stratified Heterogeneity* (SSH), integrating advanced statistical methods to assess spatial patterns effectively. Developed using **R**, **C++**, and **Python**.  
+  Detecting spatial associations via spatial stratified heterogeneity, accounting for spatial dependencies, interpretability, complex interactions, and robust stratification. In addition, it supports the spatial stratified heterogeneity family described in Lv et al. (2025)<doi:10.1111/tgis.70032>. Developed using **R**, **C++**, and **Python**.  
 
 - **[sesp](https://github.com/stscl/sesp)**  
   Implements the *Spatially Explicit Stratified Power* model, a robust framework for spatial analysis combining stratification and statistical power. Written in **R** and **C++**.  
@@ -97,7 +106,7 @@ tribble(
   Implements *Geographical Detectors*, a toolkit for assessing spatial factors influencing heterogeneity. Fully developed in **R**.  
 
 - **[sdsfun](https://github.com/stscl/sdsfun)**  
-  Adds complementary features for *Spatial Data Science*, providing user-friendly functionalities for geospatial research. Developed using **R** and **C++**.  
+  Adds complementary features for *Spatial Data Science*, providing user-friendly functionalities for geospatial research. Developed using **C++** and **R**.  
 
 - **[geocn](https://github.com/stscl/geocn)**  
   Simplifies the process of loading and managing spatial datasets of China, supporting research with localized datasets. Developed in **R**.  
