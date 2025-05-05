@@ -86,16 +86,18 @@ tribble(
 
 | Package        | Description                                                   | Source Code                                | Language       |
 |-------------------|-----------------------------------------------------------|------------------------------------------------------------|--------------------|
-| spEDM         | Spatial Empirical Dynamic Modeling                            | <https://github.com/stscl/spEDM>           | C++, R         |
-| gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>         | R, C++, Python |
-| itmsa   | Information-Theoretic Measures for Spatial Association  |              <https://github.com/stscl/itmsa>          | C++, R         |
-| GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>             | R              |
-| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>          | R, C++         |
-| sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>            | R, C++         |
-| cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/stscl/cisp>            | R              |
+| spEDM         | Spatial Empirical Dynamic Modeling                            | <https://github.com/stscl/spEDM>          | C++, R         |
+| gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>        | R, C++, Python |
+| itmsa         | Information-Theoretic Measures for Spatial Association        |  <https://github.com/stscl/itmsa>          | C++, R         |
+| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>         | R, C++         |
 | geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C      |
+| HSAR          | Hierarchical Spatial Autoregressive Model                     | <https://github.com/spatlyu/hsar>   | C++, R      |
+| GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>             | R              |
+| sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>           | R, C++         |
+| cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/stscl/cisp>           | R              |
 | geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
-| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>           | R              |
+| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>          | R              |
+| figpatch      | Easily Arrange External Figures with Patchwork Alongside 'ggplot2' Figures | <https://github.com/spatlyu/figpatch>          | R              |
 | qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
 | spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
 | tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
