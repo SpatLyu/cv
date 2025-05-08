@@ -60,7 +60,7 @@ tribble(
 ```{r}
 tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS",
+  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently under review",
   # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
   "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
   "Decomposing spatial causality through mutual information", 
