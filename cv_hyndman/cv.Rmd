@@ -27,7 +27,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "BSc In Geographic Information Science", "2021-2025", "Shaanxi Normal University", "Xi'an, Shaanxi",
+  "BSc In Geographic Information Science", "2021.8-2025.6", "Shaanxi Normal University", "Xi'an, Shaanxi",
 ) %>%
   detailed_entries(Degree, Year, Institution, Where)
 ```
