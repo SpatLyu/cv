@@ -5,7 +5,7 @@ github: SpatLyu
 www: spatlyu.github.io
 orcid: 0009-0002-6003-3800
 email: "lyu.geosocial@gmail.com"
-address: "Xi'an, Shaanxi"
+address: "Guangzhou, Guangdong"
 # date: "`r Sys.Date()`"
 output: vitae::hyndman
 ---
@@ -24,12 +24,22 @@ library(vitae)
 # Education
 
 ```{r}
-library(tibble)
-tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
+tibble::tribble(
+  ~ Degree, ~ Duration, ~ Institution, ~ Where,
   "BSc In Geographic Information Science", "2021.8-2025.6", "Shaanxi Normal University", "Xi'an, Shaanxi",
 ) %>%
-  detailed_entries(Degree, Year, Institution, Where)
+  detailed_entries(Degree, Duration, Institution, Where)
+```
+
+# Research Experience
+
+```{r}
+tibble::tribble(
+  ~ Position, ~ Duration, ~ Institution, ~ Where,
+  "Research Assistant", "2025.1-2025.12", "UGOD,HKUST-GZ", "Guangzhou, Guangdong",
+  "Research Assistant", "2025.2-2025.8", "Polyu", "Shenzhen, Guangdong",
+) %>%
+  detailed_entries(Position, Duration, Institution, Where)
 ```
 
 # Publications
@@ -41,7 +51,7 @@ bibliography_entries("../lyu_publications.bib")
 # Honor
 
 ```{r}
-tribble(
+tibble::tribble(
   ~ Awards, ~ Date,
   "Longi Non-Education Major Scholarship", "2024.12",
   "First Prize in the 13th National University Student GIS Application Skills Competition", "2024.11",
@@ -49,7 +59,7 @@ tribble(
   "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
   "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
   "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
-  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10"
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
 ) %>%
   detailed_entries(Awards,Date)
 ```
@@ -57,17 +67,19 @@ tribble(
 # Unpublished
 
 ```{r}
-tribble(
+tibble::tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently under review",
+  "Measuring causal strengths by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently in revision",
   # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
   "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
+  "Causal discovery in urban data with temporal empirical dynamic modeling",
+  "First Author", "In writting",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
   "Decomposing spatial causality through mutual information", 
   "First Author", "Plan",
-  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
-  "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
+  # "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
+  # "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
@@ -88,11 +100,12 @@ tribble(
 | Package        | Description                                                   | Source Code                                | Language       |
 |-------------------|-----------------------------------------------------------|------------------------------------------------------------|--------------------|
 | spEDM         | Spatial Empirical Dynamic Modeling                            | <https://github.com/stscl/spEDM>          | C++, R         |
+| tEDM          | Temporal Empirical Dynamic Modeling                           | <https://github.com/stscl/tEDM>           | C++, R         |
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>        | R, C++, Python |
-| itmsa         | Information-Theoretic Measures for Spatial Association        |  <https://github.com/stscl/itmsa>          | C++, R         |
+| itmsa         | Information-Theoretic Measures for Spatial Association        |  <https://github.com/stscl/itmsa>         | C++, R         |
 | sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>         | R, C++         |
-| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity>  | C++, R, C      |
-| HSAR          | Hierarchical Spatial Autoregressive Model                     | <https://github.com/spatlyu/hsar>   | C++, R      |
+| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity> | C++, R, C      |
+| HSAR          | Hierarchical Spatial Autoregressive Model                     | <https://github.com/spatlyu/hsar>         | C++, R         |
 | GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>             | R              |
 | sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>           | R, C++         |
 | cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/stscl/cisp>           | R              |
