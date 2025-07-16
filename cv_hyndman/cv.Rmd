@@ -1,6 +1,6 @@
 ---
 name: Wenbo Lv
-position: "undergraduate"
+position: "B.Sc. Graduate"
 github: SpatLyu
 www: spatlyu.github.io
 orcid: 0009-0002-6003-3800
@@ -26,7 +26,7 @@ library(vitae)
 ```{r}
 tibble::tribble(
   ~ Degree, ~ Duration, ~ Institution, ~ Where,
-  "BSc In Geographic Information Science", "2021.8-2025.6", "Shaanxi Normal University", "Xi'an, Shaanxi",
+  "B.Sc. In Geographic Information Science", "2021.8-2025.6", "Shaanxi Normal University", "Xi'an, Shaanxi",
 ) %>%
   detailed_entries(Degree, Duration, Institution, Where)
 ```
