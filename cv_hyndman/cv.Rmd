@@ -5,7 +5,7 @@ github: SpatLyu
 www: spatlyu.github.io
 orcid: 0009-0002-6003-3800
 email: "lyu.geosocial@gmail.com"
-address: "Guangzhou, Guangdong"
+address: "Hong Kong"
 # date: "`r Sys.Date()`"
 output: vitae::hyndman
 ---
