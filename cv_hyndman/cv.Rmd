@@ -5,7 +5,7 @@ github: SpatLyu
 www: spatlyu.github.io
 orcid: 0009-0002-6003-3800
 email: "lyu.geosocial@gmail.com"
-address: "Hong Kong"
+address: "Guangzhou"
 # date: "`r Sys.Date()`"
 output: vitae::hyndman
 ---
@@ -36,7 +36,7 @@ tibble::tribble(
 ```{r}
 tibble::tribble(
   ~ Position, ~ Duration, ~ Institution, ~ Where,
-  "Research Assistant", "2025.1-2025.12", "UGOD,HKUST-GZ", "Guangzhou, Guangdong",
+  "Visiting Student", "2024.8-2025.12", "HKUST(GZ)", "Guangzhou, Guangdong",
   "Research Assistant", "2025.2-2025.8", "Polyu", "Shenzhen, Guangdong",
 ) %>%
   detailed_entries(Position, Duration, Institution, Where)
@@ -69,7 +69,7 @@ tibble::tribble(
 ```{r}
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal strengths by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently in revision",
+  "Measuring causal strengths by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently second-round revision",
   # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
   "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
   "Causal discovery in urban data with temporal empirical dynamic modeling",
