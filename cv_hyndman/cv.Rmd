@@ -77,6 +77,8 @@ tibble::tribble(
   "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
+  "gobi: General ODE-Based Causal Inference in R", 
+  "First Author", "Plan",
   "Decomposing spatial causality through mutual information", 
   "First Author", "Plan",
   # "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
