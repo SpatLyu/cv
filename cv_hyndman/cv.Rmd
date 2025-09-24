@@ -73,7 +73,7 @@ tibble::tribble(
   "Measuring causal strengths by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently with editor",
   "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
   "First Author", "Submitted to CEUS, currently under review",
-  "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
+  # "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
   # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
