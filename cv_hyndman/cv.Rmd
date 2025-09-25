@@ -70,7 +70,7 @@ tibble::tribble(
 ```{r}
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal strengths by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently with editor",
+  "Measuring causal strengths by geographical cross mapping cardinality",      "First Author", "Submitted to IJGIS, currently under review",
   "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
   "First Author", "Submitted to CEUS, currently under review",
   # "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
@@ -81,6 +81,8 @@ tibble::tribble(
   "First Author", "Plan",
   "Decomposing spatial causality through mutual information", 
   "First Author", "Plan",
+  # "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
+  # "Co-Author", "Planned submission to JAG",
   # "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
   # "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
