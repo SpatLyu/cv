@@ -106,8 +106,7 @@ tibble::tribble(
 |-------------------|-----------------------------------------------------------|------------------------------------------------------------|--------------------|
 | spEDM         | Spatial Empirical Dynamic Modeling                            | <https://github.com/stscl/spEDM>          | C++, R         |
 | tEDM          | Temporal Empirical Dynamic Modeling                           | <https://github.com/stscl/tEDM>           | C++, R         |
-| gobi          | General ODE-Based Inference                    
-    | <https://github.com/stscl/gobi>           | C++, R         |
+| gobi          | General ODE-Based Inference                   | <https://github.com/stscl/gobi>           | C++, R         |
 | gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>        | R, C++, Python |
 | itmsa         | Information-Theoretic Measures for Spatial Association        |  <https://github.com/stscl/itmsa>         | C++, R         |
 | sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>         | R, C++         |
