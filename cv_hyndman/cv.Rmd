@@ -17,9 +17,9 @@ library(vitae)
 
 # Some stuff about me
 
-- My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
-- Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system* and **Difference-in-Differences (DID)** methods for *event studies*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
-- I specialize in *data analysis*, *statistical modeling*, and developing open-source analytical tools, including *R packages*, using **R**, **C++**, and **Python**, with a strong focus on *spatial analysis*. I actively contribute to the R geospatial community and am dedicated to advancing open-source geospatial software.
+-   My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
+-   Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system* and **Difference-in-Differences (DID)** methods for *event studies*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
+-   I specialize in *data analysis*, *statistical modeling*, and developing open-source analytical tools, including *R packages*, using **R**, **C++**, and **Python**, with a strong focus on *spatial analysis*. I actively contribute to the R geospatial community and am dedicated to advancing open-source geospatial software.
 
 # Education
 
@@ -92,34 +92,43 @@ tibble::tribble(
 <!-- # In research -->
 
 <!-- ```{r} -->
+
 <!-- tribble( -->
+
 <!--   ~ Name, ~ Role, ~ Date, ~ Details, -->
+
 <!--   "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "", -->
+
 <!--   "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries" -->
+
 <!-- ) %>% -->
+
 <!--   detailed_entries(Name, Role, Date, Details) -->
+
 <!-- ``` -->
 
 # Developed Spatial Analysis Toolkit
 
-| Package        | Description                                                   | Source Code                                | Language       |
-|-------------------|-----------------------------------------------------------|------------------------------------------------------------|--------------------|
-| spEDM         | Spatial Empirical Dynamic Modeling                            | <https://github.com/stscl/spEDM>          | C++, R         |
-| tEDM          | Temporal Empirical Dynamic Modeling                           | <https://github.com/stscl/tEDM>           | C++, R         |
-| gobi          | General ODE-Based Inference                   | <https://github.com/stscl/gobi>           | C++, R         |
-| gdverse       | Analysis of Spatial Stratified Heterogeneity                  | <https://github.com/stscl/gdverse>        | R, C++, Python |
-| itmsa         | Information-Theoretic Measures for Spatial Association        |  <https://github.com/stscl/itmsa>         | C++, R         |
-| sdsfun        | Spatial Data Science Complementary Features                   | <https://github.com/stscl/sdsfun>         | R, C++         |
-| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity         | <https://github.com/ausgis/geocomplexity> | C++, R, C      |
-| HSAR          | Hierarchical Spatial Autoregressive Model                     | <https://github.com/spatlyu/hsar>         | C++, R         |
-| GD            | Geographical Detectors for Assessing Spatial Factors          | <https://github.com/ausgis/GD>            | R              |
-| sesp          | Spatially Explicit Stratified Power                           | <https://github.com/stscl/sesp>           | R, C++         |
-| cisp          | A Correlation Indicator Based On Spatial Patterns             | <https://github.com/stscl/cisp>           | R              |
-| geosimilarity | Geographically Optimal Similarity                             | <https://github.com/ausgis/geosimilarity>  | R              |
-| geocn         | Loads Spatial Data Sets of China                              | <https://github.com/stscl/geocn>           | R              |
-| figpatch      | Easily Arrange External Figures with Patchwork Alongside 'ggplot2' Figures | <https://github.com/spatlyu/figpatch>          | R              |
-| qgisprocess   | R package to use QGIS processing algorithms                   | <https://github.com/r-spatial/qgisprocess> | R              |
-| spEcula       | Spatial Prediction Methods In R                               | <https://github.com/SpatLyu/spEcula>       | R              |
-| tidyrgeoda    | A tidy interface for rgeoda                                   | <https://github.com/SpatLyu/tidyrgeoda>    | R              |
+| Package | Description | Source Code | Language |
+|--------------|----------------------|-----------------------|--------------|
+| spEDM | Spatial Empirical Dynamic Modeling | <https://github.com/stscl/spEDM> | C++, R |
+| tEDM | Temporal Empirical Dynamic Modeling | <https://github.com/stscl/tEDM> | C++, R |
+| gobi | General ODE-Based Causal Inference | <https://github.com/stscl/gobi> | C++, R |
+| gdverse | Analysis of Spatial Stratified Heterogeneity | <https://github.com/stscl/gdverse> | R, C++, Python |
+| itmsa | Information-Theoretic Measures for Spatial Association | <https://github.com/stscl/itmsa> | C++, R |
+| sdsfun | Spatial Data Science Complementary Features | <https://github.com/stscl/sdsfun> | R, C++ |
+| geocomplexity | Mitigate Spatial Bias Through Geographical Complexity | <https://github.com/ausgis/geocomplexity> | C++, R, C |
+| HSAR | Hierarchical Spatial Autoregressive Model | <https://github.com/spatlyu/hsar> | C++, R |
+| GD | Geographical Detectors for Assessing Spatial Factors | <https://github.com/ausgis/GD> | R |
+| sesp | Spatially Explicit Stratified Power | <https://github.com/stscl/sesp> | R, C++ |
+| cisp | A Correlation Indicator Based On Spatial Patterns | <https://github.com/stscl/cisp> | R |
+| geosimilarity | Geographically Optimal Similarity | <https://github.com/ausgis/geosimilarity> | R |
+| geocn | Loads Spatial Data Sets of China | <https://github.com/stscl/geocn> | R |
+| figpatch | Easily Arrange External Figures with Patchwork Alongside 'ggplot2' Figures | <https://github.com/spatlyu/figpatch> | R |
+| qgisprocess | R package to use QGIS processing algorithms | <https://github.com/r-spatial/qgisprocess> | R |
+| spEcula | Spatial Prediction Methods In R | <https://github.com/SpatLyu/spEcula> | R |
+| tidyrgeoda | A tidy interface for rgeoda | <https://github.com/SpatLyu/tidyrgeoda> | R |
+
 <!-- | Rsagacmd      | A package for linking R with the open-source SAGA-GIS         | <https://github.com/stevenpawley/Rsagacmd> | R              | -->
+
 <!-- | SpatBox       | A Python Library For GeoSpatial Data Propressing and Modeling | <https://github.com/SpatLyu/spatbox>     | Python         | -->
