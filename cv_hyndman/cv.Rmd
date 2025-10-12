@@ -110,7 +110,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Source Code | Language |
-|------------------|------------------|------------------|------------------|
+|-------------|-------------------|-------------------------------|------------------|
 | spEDM | Spatial Empirical Dynamic Modeling | <https://github.com/stscl/spEDM> | C++, R |
 | tEDM | Temporal Empirical Dynamic Modeling | <https://github.com/stscl/tEDM> | C++, R |
 | gobi | General ODE-Based Causal Inference | <https://github.com/stscl/gobi> | C++, R |
