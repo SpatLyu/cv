@@ -77,9 +77,9 @@ tibble::tribble(
   # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
-  "gobi: General ODE-Based Causal Inference in R", 
+  "Quantifying Information Flows in Spatial Processes", 
   "First Author", "Plan",
-  "Decomposing spatial causality through mutual information", 
+  "gobi: General ODE-Based Causal Inference in R", 
   "First Author", "Plan",
   # "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
   # "Co-Author", "Planned submission to JAG",
@@ -110,7 +110,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Source Code | Language |
-|-------------|-------------------|-------------------------------|------------------|
+|----------------|----------------|-------------------------|----------------|
 | spEDM | Spatial Empirical Dynamic Modeling | <https://github.com/stscl/spEDM> | C++, R |
 | tEDM | Temporal Empirical Dynamic Modeling | <https://github.com/stscl/tEDM> | C++, R |
 | gobi | General ODE-Based Causal Inference | <https://github.com/stscl/gobi> | C++, R |
