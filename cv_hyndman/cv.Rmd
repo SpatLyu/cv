@@ -81,8 +81,8 @@ tibble::tribble(
   "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R", 
   "First Author", "Plan",
-  # "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
-  # "Co-Author", "Planned submission to JAG",
+  "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
+  "Co-Author", "Submitted to JAG",
   # "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
   # "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
@@ -110,7 +110,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Source Code | Language |
-|----------------|----------------|-------------------------|----------------|
+|-----------------|-----------------|-----------------------|-----------------|
 | spEDM | Spatial Empirical Dynamic Modeling | <https://github.com/stscl/spEDM> | C++, R |
 | tEDM | Temporal Empirical Dynamic Modeling | <https://github.com/stscl/tEDM> | C++, R |
 | gobi | General ODE-Based Causal Inference | <https://github.com/stscl/gobi> | C++, R |
