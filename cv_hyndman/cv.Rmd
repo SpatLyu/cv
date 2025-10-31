@@ -18,8 +18,8 @@ library(vitae)
 # Some stuff about me
 
 -   My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
--   Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system* and **Difference-in-Differences (DID)** methods for *event studies*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
 -   I specialize in *data analysis*, *statistical modeling*, and developing open-source analytical tools, including *R packages*, using **R**, **C++**, and **Python**, with a strong focus on *spatial analysis*. I actively contribute to the R geospatial community and am dedicated to advancing open-source geospatial software.
+-   Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system*, **information theory** for quantifying *information flow* and *causal interdependence*, **ordinary differential equations (ODEs)** for characterizing *spatiotemporal processes* and *system evolution*, as well as **counterfactual** and **potential outcomes** framework for estimating *causal effects*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
 
 # Education
 
@@ -110,7 +110,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Source Code | Language |
-|---------------|--------------|-------------------------------------|---------------|
+|----------------|--------------|-------------------------------------|---------------|
 | spEDM | Spatial Empirical Dynamic Modeling | <https://github.com/stscl/spEDM> | C++, R |
 | tEDM | Temporal Empirical Dynamic Modeling | <https://github.com/stscl/tEDM> | C++, R |
 | gobi | General ODE-Based Causal Inference | <https://github.com/stscl/gobi> | C++, R |
