@@ -110,24 +110,34 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Language |
-|----------------|------------------------------------------------|------------------------|
+|----------------|----------------------------------------------|------------------|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
 | [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
 | [infocausality](https://github.com/stscl/infocausality) | Information-Theoretic Measure of Causality | C++, Python, R |
 | [gdverse](https://cran.r-project.org/package=gdverse) | Analysis of Spatial Stratified Heterogeneity | R, C++, Python |
-| [itmsa](https://cran.r-project.org/package=itmsa) | Information-Theoretic Measures for Spatial Association | C++, R |
 | [sdsfun](https://cran.r-project.org/package=sdsfun) | Spatial Data Science Complementary Features | R, C++ |
 | [geocomplexity](https://cran.r-project.org/package=geocomplexity) | Mitigate Spatial Bias Through Geographical Complexity | C++, R, C |
 | [HSAR](https://cran.r-project.org/package=HSAR) | Hierarchical Spatial Autoregressive Model | C++, R |
 | [GD](https://cran.r-project.org/package=GD) | Geographical Detectors for Assessing Spatial Factors | R |
-| [sesp](https://github.com/stscl/sesp) | Spatially Explicit Stratified Power | R, C++ |
-| [cisp](https://cran.r-project.org/package=cisp) | A Correlation Indicator Based On Spatial Patterns | R |
 | [geosimilarity](https://cran.r-project.org/package=) | Geographically Optimal Similarity | R |
-| [geocn](https://github.com/stscl/geocn) | Loads Spatial Data Sets of China | R |
-| [figpatch](https://cran.r-project.org/package=figpatch) | Easily Arrange External Figures with Patchwork Alongside 'ggplot2' Figures | R |
-| [qgisprocess](https://cran.r-project.org/package=qgisprocess) | R package to use QGIS processing algorithms | R |
-| [spEcula](https://github.com/SpatLyu/spEcula) | Spatial Prediction Methods In R | R |
-| [tidyrgeoda](https://github.com/SpatLyu/tidyrgeoda) | A tidy interface for rgeoda | R |
-| [Rsagacmd](https://cran.r-project.org/package=Rsagacmd) | A package for linking R with the open-source SAGA-GIS | R |
-| [SpatBox](https://github.com/SpatLyu/spatbox) | A Python Library For GeoSpatial Data Propressing and Modeling | Python |
+
+<!-- | [itmsa](https://cran.r-project.org/package=itmsa) | Information-Theoretic Measures for Spatial Association | C++, R | -->
+
+<!-- | [sesp](https://github.com/stscl/sesp) | Spatially Explicit Stratified Power | R, C++ | -->
+
+<!-- | [cisp](https://cran.r-project.org/package=cisp) | A Correlation Indicator Based On Spatial Patterns | R | -->
+
+<!-- | [geocn](https://github.com/stscl/geocn) | Loads Spatial Data Sets of China | R | -->
+
+<!-- | [spEcula](https://github.com/SpatLyu/spEcula) | Spatial Prediction Methods In R | R | -->
+
+<!-- | [tidyrgeoda](https://github.com/SpatLyu/tidyrgeoda) | A tidy interface for rgeoda | R | -->
+
+<!-- | [figpatch](https://cran.r-project.org/package=figpatch) | Easily Arrange External Figures with Patchwork Alongside 'ggplot2' Figures | R | -->
+
+<!-- | [qgisprocess](https://cran.r-project.org/package=qgisprocess) | R package to use QGIS processing algorithms | R | -->
+
+<!-- | [Rsagacmd](https://cran.r-project.org/package=Rsagacmd) | A package for linking R with the open-source SAGA-GIS | R | -->
+
+<!-- | [SpatBox](https://github.com/SpatLyu/spatbox) | A Python Library For GeoSpatial Data Propressing and Modeling | Python | -->
