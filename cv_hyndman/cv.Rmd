@@ -74,7 +74,7 @@ tibble::tribble(
   "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
   "First Author", "Submitted to CEUS, currently under review",
   # "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
-  # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
+  # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE GRSL, currently under review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
   "Quantifying Information Flows in Spatial Processes", 
@@ -82,7 +82,7 @@ tibble::tribble(
   "gobi: General ODE-Based Causal Inference in R", 
   "First Author", "Plan",
   # "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
-  # "Co-Author", "Submitted to JAG",
+  # "Co-Author", "Submitted to GRS, currently under review",
   # "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
   # "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
@@ -110,7 +110,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Language |
-|----------------|-------------------------------------------------|-----------------|
+|---------------|-------------------------------------------------|----------------|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
 | [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
