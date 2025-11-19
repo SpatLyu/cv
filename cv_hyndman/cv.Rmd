@@ -77,6 +77,8 @@ tibble::tribble(
   # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE GRSL, currently under review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
+  "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
+  "First Author", "Plan",
   "Quantifying Information Flows in Spatial Processes", 
   "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R", 
