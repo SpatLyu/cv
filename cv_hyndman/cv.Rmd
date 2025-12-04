@@ -116,7 +116,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Language |
-|----------------|------------------------------------------------|----------------|
+|----------------|-------------------------------------------------|----------------|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
 | [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
