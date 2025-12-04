@@ -75,7 +75,6 @@ tibble::tribble(
   "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
   "First Author", "Submitted to CEUS, currently in revision",
   # "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
-  # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE GRSL, currently under review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "In writting",
   "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
