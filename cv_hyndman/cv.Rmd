@@ -88,7 +88,7 @@ tibble::tribble(
     # "New-type Urbanization Policy,Urban Expansion,and Employment Quality in Chinese Cities: Evidence from a Quasi-natural Experiment in China",
   # "Co-Author", "Submitted to JGSA, currently with editor",
   # "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
-  # "Co-Author", "Submitted to GRS, currently with editor",
+  # "Co-Author", "Submitted to GRS, currently under review",
   # "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
   # "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
 ) %>%
@@ -116,7 +116,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Language |
-|----------------|-------------------------------------------------|----------------|
+|----------------|------------------------------------------------|----------------|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
 | [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
