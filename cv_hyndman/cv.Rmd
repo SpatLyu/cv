@@ -70,7 +70,7 @@ tibble::tribble(
 ```{r}
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal strengths by geographical cross mapping cardinality",      
+  "Measuring causal strengths from spatial cross-sectional data with geographical cross mapping cardinality",      
   "First Author", "Submitted to IJGIS, currently in revision",
   "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
   "First Author", "Submitted to CEUS, currently in revision",
