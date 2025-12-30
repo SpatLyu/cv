@@ -38,7 +38,7 @@ tibble::tribble(
   ~ Position, ~ Duration, ~ Institution, ~ Where,
   "Research Assistant", "2025.9-2026.9", "EITech", "Ningbo, Zhejiang",
   "Research Assistant", "2025.2-2025.8", "PolyU-SZRI", "Shenzhen, Guangdong",
-  "Research Intern", "2024.8-2025.6", "HKUST(GZ)", "Guangzhou, Guangdong",
+  "Research Intern", "2024.8-2025.8", "HKUST(GZ)", "Guangzhou, Guangdong",
 ) %>%
   detailed_entries(Position, Duration, Institution, Where)
 ```
