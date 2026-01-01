@@ -116,8 +116,8 @@ tibble::tribble(
 |----------------|----------------------------------------|----------------|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
-| [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
 | [infocausality](https://github.com/stscl/infocausality) | Information-Theoretic Measure of Causality | C++, Python, R |
+| [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
 | [gdverse](https://cran.r-project.org/package=gdverse) | Analysis of Spatial Stratified Heterogeneity | R, C++, Python |
 | [sdsfun](https://cran.r-project.org/package=sdsfun) | Spatial Data Science Complementary Features | R, C++ |
 | [geocomplexity](https://cran.r-project.org/package=geocomplexity) | Mitigate Spatial Bias Through Geographical Complexity | C++, R, C |
