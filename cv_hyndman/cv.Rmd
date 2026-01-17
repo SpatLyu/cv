@@ -70,9 +70,9 @@ tibble::tribble(
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
   "Measuring causal strengths from spatial cross-sectional data with geographical cross mapping cardinality",      
-  "First Author", "Submitted to IJGIS, currently in revision",
+  "First Author", "Submitted to IJGIS, currently second-round review",
   "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
-  "First Author", "Submitted to CEUS, currently in revision",
+  "First Author", "Submitted to CEUS, currently second-round review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "Ready to submit",
   "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
