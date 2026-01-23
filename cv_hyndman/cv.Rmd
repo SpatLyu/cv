@@ -87,7 +87,7 @@ tibble::tribble(
   # "New-type Urbanization Policy,Urban Expansion,and Employment Quality in Chinese Cities: Evidence from a Quasi-natural Experiment in China",
   # "Co-Author", "Submitted to JGSA, currently with editor",
   # "Township-scale vegetation greening in the Guangdong-Hong Kong-Macao Greater Bay Area: Pathways, spatiotemporal heterogeneity, causality, and driving mechanisms",
-  # "Co-Author", "Submitted to GRS, currently in revision"
+  # "Co-Author", "Accepted by GRS, currently in press"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
