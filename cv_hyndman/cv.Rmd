@@ -78,7 +78,7 @@ tibble::tribble(
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
   "Co-First Author", "Plan",
   "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
-  "First Author", "Plan",
+  "Co-First Author", "Plan",
   "Quantifying Information Flows in Spatial Processes",
   "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R",
