@@ -82,12 +82,7 @@ tibble::tribble(
   "Quantifying Information Flows in Spatial Processes",
   "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R",
-  "First Author", "Plan",
-  # "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
-  # "Geocomplexity-heterogeneity model for identifying spatial pattern drivers",
-  # "Co-Author", "Submitted to IJGIS, currently with decision",
-  # "New-type Urbanization Policy,Urban Expansion,and Employment Quality in Chinese Cities: Evidence from a Quasi-natural Experiment in China",
-  # "Co-Author", "Ready to submit to GRS"
+  "First Author", "Plan"
 ) %>%
   detailed_entries(Name, Role, Status)
 ```
