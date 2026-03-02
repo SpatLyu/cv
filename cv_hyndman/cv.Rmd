@@ -76,7 +76,7 @@ tibble::tribble(
   "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   "First Author", "Submitted to NatComms, currently under consideration",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
-  "Co-First Author", "Plan",
+  "Co-First Author", "Submitted to IJGIS, currently under review",
   "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
   "Co-First Author", "Plan",
   "Quantifying Information Flows in Spatial Processes",
