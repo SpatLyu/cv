@@ -1,5 +1,5 @@
 ---
-name: Wenbo LYU (吕文博)
+name: Wenbo LYU
 position: "B.Sc. Graduate"
 github: SpatLyu
 www: spatlyu.github.io
