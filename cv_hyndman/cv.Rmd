@@ -79,7 +79,7 @@ tibble::tribble(
   "Co-First Author", "Submitted to IJGIS, currently under review",
   "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
   "Co-First Author", "Plan",
-  "Quantifying Information Flows in Spatial Processes",
+  "Unveiling interaction between spatial processes with information decomposition",
   "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R",
   "First Author", "Plan"
