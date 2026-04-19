@@ -81,6 +81,8 @@ tibble::tribble(
   "Co-First Author", "Plan",
   "Unveiling interaction between spatial processes with information decomposition",
   "First Author", "Plan",
+  "pc: An R Package for Causal Discovery via Pattern Causality Analysis",
+  "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R",
   "First Author", "Plan"
 ) %>%
