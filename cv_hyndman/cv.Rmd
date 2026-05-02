@@ -113,7 +113,7 @@ tibble::tribble(
 |----|----|----|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
-| [infocausality](https://github.com/stscl/infocausality) | Information-Theoretic Measure of Causality | C++, Python, R |
+| [infoxtr](https://github.com/stscl/infoxtr) | Information-Theoretic Measures for Revealing Variable Interactions | C++, R |
 | [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | C++, R |
 | [gdverse](https://cran.r-project.org/package=gdverse) | Analysis of Spatial Stratified Heterogeneity | R, C++, Python |
 | [sdsfun](https://cran.r-project.org/package=sdsfun) | Spatial Data Science Complementary Features | R, C++ |
