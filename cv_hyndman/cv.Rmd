@@ -121,7 +121,7 @@ tibble::tribble(
 | [geocomplexity](https://cran.r-project.org/package=geocomplexity) | Mitigate Spatial Bias Through Geographical Complexity | C++, R, C |
 | [HSAR](https://cran.r-project.org/package=HSAR) | Hierarchical Spatial Autoregressive Model | C++, R |
 | [GD](https://cran.r-project.org/package=GD) | Geographical Detectors for Assessing Spatial Factors | R |
-| [geosimilarity](https://cran.r-project.org/package=) | Geographically Optimal Similarity | R |
+| [geosimilarity](https://cran.r-project.org/package=geosimilarity) | Geographically Optimal Similarity | R |
 
 <!-- | [itmsa](https://cran.r-project.org/package=itmsa) | Information-Theoretic Measures for Spatial Association | C++, R | -->
 
