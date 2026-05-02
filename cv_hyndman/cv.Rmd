@@ -77,12 +77,12 @@ tibble::tribble(
   # "First Author", "Submitted to Sci.Adv, currently under evaluation",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
   "Co-First Author", "Submitted to IJGIS, currently under review",
-  "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
-  "Co-First Author", "Plan",
   "Unveiling interaction between spatial processes with information decomposition",
   "First Author", "Plan",
   "pc: An R Package for Causal Discovery via Pattern Causality Analysis",
   "First Author", "Plan",
+  "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
+  "Co-First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R",
   "First Author", "Plan"
 ) %>%
