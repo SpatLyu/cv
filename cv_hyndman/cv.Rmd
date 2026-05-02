@@ -69,10 +69,10 @@ tibble::tribble(
 ```{r}
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
+    "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
+  "First Author", "Submitted to CEUS, currently second-round review",
   "Measuring causal strengths from spatial cross-sectional data with geographical cross mapping cardinality",      
   "First Author", "Submitted to IJGIS, currently second-round review",
-  "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
-  "First Author", "Submitted to CEUS, currently second-round review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "Submitted to Sci.Adv, currently under evaluation",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
