@@ -44,7 +44,9 @@ tibble::tribble(
 
 # Publications
 
-*Note: "Lyu W." and "Lv W." are both used by the author, Wenbo Lyu.*
+<p style="font-size: 0.85em; font-style: italic; color: #555;">
+Note: "Lyu, W." and "Lv, W." are both used by the author, Wenbo Lyu.
+</p>
 
 ```{r}
 bibliography_entries("../lyu_publications.bib")
