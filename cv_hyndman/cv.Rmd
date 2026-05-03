@@ -44,6 +44,8 @@ tibble::tribble(
 
 # Publications
 
+*Note: "Lyu W." and "Lv W." are both used by the author, Wenbo Lyu.*
+
 ```{r}
 bibliography_entries("../lyu_publications.bib")
 ```
