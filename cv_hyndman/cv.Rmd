@@ -83,7 +83,7 @@ tibble::tribble(
   "Co-First Author", "Submitted to IJGIS, currently under review",
   "Unveiling interaction between spatial processes with information decomposition",
   "First Author", "Plan",
-  "Spatial causal discovery under latent confounders via deep orthogonal decomposition",
+  "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
   "First Author", "Plan",
   "pc: An R Package for Causal Discovery via Pattern Causality Analysis",
   "First Author", "Plan",
