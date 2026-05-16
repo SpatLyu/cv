@@ -31,16 +31,16 @@ tibble::tribble(
   detailed_entries(Degree, Duration, Institution, Where)
 ```
 
-<!-- # Research Experience -->
+# Research Experience
 
-<!-- ```{r} -->
-<!-- tibble::tribble( -->
-<!--   ~ Position, ~ Duration, ~ Institution, ~ Where, -->
-<!--   "Research Assistant", "2025.9-2026.2", "Eastern Institute of Technology, Ningbo", "Ningbo, Zhejiang", -->
-<!--   "Research Intern", "2024.8-2025.8", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong", -->
-<!-- ) %>% -->
-<!--   detailed_entries(Position, Duration, Institution, Where) -->
-<!-- ``` -->
+```{r}
+tibble::tribble(
+  ~ Position, ~ Duration, ~ Institution, ~ Where,
+  "Research Assistant", "2025.9-2026.6", "Eastern Institute of Technology, Ningbo", "Ningbo, Zhejiang",
+  "Research Intern", "2024.8-2025.8", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong",
+) %>%
+  detailed_entries(Position, Duration, Institution, Where)
+```
 
 # Publications
 
