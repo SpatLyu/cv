@@ -85,8 +85,8 @@ tibble::tribble(
   "First Author", "Plan",
   "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
   "First Author", "Plan",
-  "Convergence-Diagnostic Geographical Pattern Causality for Robust Spatial Causal Discovery",
-  "Co-First Author", "Plan",
+  "Convergence-Diagnostic Pattern Causality for Reliable Spatial Causal Discovery",
+  "First Author", "Plan",
   "gobi: General ODE-Based Causal Inference in R",
   "First Author", "Plan"
 ) %>%
