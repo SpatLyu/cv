@@ -81,7 +81,7 @@ tibble::tribble(
   "Co-First Author", "Submitted to IJGIS, currently under review",
   "Unveiling interaction between spatial processes with information decomposition",
   "First Author", "Plan",
-  "Convergence-Diagnostic Pattern Causality for Reliable Spatial Causal Discovery",
+  "Quantifying pairwise directional influence between spatial variables: Asymmetry, nonlinearity, and beyond",
   "First Author", "Plan",
   "Pattern Causality for Detecting Interactions with the R Package pc",
   "First Author", "Plan",
