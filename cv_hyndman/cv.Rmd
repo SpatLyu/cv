@@ -76,7 +76,7 @@ tibble::tribble(
   "Measuring causal strengths from spatial cross-sectional data with geographical cross mapping cardinality",      
   "First Author", "Submitted to IJGIS, currently second-round review",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
-  # "First Author", "Submitted to Sci.Adv, currently under evaluation",
+  # "First Author", "Submitted to Commun Phys, currently under review",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
   "Co-First Author (2nd)", "Submitted to IJGIS, currently under review",
   "Quantifying pairwise directional influence between spatial variables: Asymmetry, nonlinearity, and beyond",
