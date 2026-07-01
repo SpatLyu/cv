@@ -74,8 +74,6 @@ bibliography_entries("../lyu_publications.bib")
 ```{r}
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal strengths from spatial cross-sectional data with geographical cross mapping cardinality",      
-  "First Author", "Accepted by IJGIS",
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "Submitted to Commun Phys, currently under review",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
