@@ -91,7 +91,7 @@ tibble::tribble(
   "Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships",
   "Co-First Author (1st)", "Submitted to AAAG, currently under second-round review",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
-  "Co-First Author (2nd)", "Submitted to IJGIS, currently under review",
+  "Co-First Author (2nd)", "Submitted to IJGIS, currently in revision",
   "Unveiling interaction between spatial processes with information decomposition",
   "First Author", "In writing",
   "Pattern Causality for Detecting Interactions with the R Package pc",
