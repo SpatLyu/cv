@@ -89,7 +89,7 @@ tibble::tribble(
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "Submitted to Commun Phys, currently under review",
   "Quantifying pairwise directional influence between spatial variables: Asymmetry, nonlinearity, and beyond",
-  "Co-First Author (1st)", "Submitted to AAAG, currently under review",
+  "Co-First Author (1st)", "Submitted to AAAG, currently under second-round review",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
   "Co-First Author (2nd)", "Submitted to IJGIS, currently under review",
   "Unveiling interaction between spatial processes with information decomposition",
@@ -125,7 +125,7 @@ tibble::tribble(
 # Developed Spatial Analysis Toolkit
 
 | Package | Description | Language |
-|----------------|----------------------------------------------------------|----------------|
+|---------------|----------------------------------------------------------|---------------|
 | [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
 | [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
 | [infoxtr](https://github.com/stscl/infoxtr) | Information-Theoretic Measures for Revealing Variable Interactions | C++, R |
