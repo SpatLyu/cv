@@ -88,7 +88,7 @@ tibble::tribble(
   ~ Name, ~ Role, ~ Status,
   # "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
   # "First Author", "Submitted to Commun Phys, currently under review",
-  "Quantifying pairwise directional influence between spatial variables: Asymmetry, nonlinearity, and beyond",
+  "Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships",
   "Co-First Author (1st)", "Submitted to AAAG, currently under second-round review",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
   "Co-First Author (2nd)", "Submitted to IJGIS, currently under review",
