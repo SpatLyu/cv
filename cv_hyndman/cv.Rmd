@@ -86,6 +86,8 @@ tibble::tribble(
   "First Author", "In writing",
   "coupling: Coupling Coordination Analysis in R",
   "First Author", "Plan",
+  "Measuring spatial stratified heterogeneity via information imbalance",
+  "First Author", "Plan",
   "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
   "First Author", "Plan",
 ) %>%
