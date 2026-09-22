@@ -27,7 +27,7 @@ library(vitae)
 tibble::tribble(
   ~ Degree, ~ Duration, ~ Institution, ~ Where,
   "B.Sc. In Geographic Information Science", "2021.8-2025.6", "Shaanxi Normal University", "Xi'an, Shaanxi",
-) %>%
+) |> 
   detailed_entries(Degree, Duration, Institution, Where)
 ```
 
@@ -38,7 +38,7 @@ tibble::tribble(
   ~ Position, ~ Duration, ~ Institution, ~ Where,
     "Research Assistant", "2026.6-2026.12", "The Hong Kong Polytechnic University", "Hong Kong",
   # "Research Assistant", "2025.9-2026.6", "Eastern Institute of Technology, Ningbo", "Ningbo, Zhejiang",
-  "Research Intern", "2024.8-2026.6", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong"
+  "Research Intern", "2024.8-2026.6", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong",
 ) |> 
   detailed_entries(Position, Duration, Institution, Where)
 ```
@@ -89,7 +89,7 @@ tibble::tribble(
   "Measuring spatial stratified heterogeneity via information imbalance",
   "First Author", "Plan",
   "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
-  "First Author", "Plan"
+  "First Author", "Plan",
 ) |> 
   detailed_entries(Name, Role, Status)
 ```
