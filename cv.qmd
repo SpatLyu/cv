@@ -63,27 +63,25 @@ baretable = \(
 
 tibble::tribble(
   ~Degree, ~Institution, ~Year ,
-  "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  2025,
+  "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  "2025",
 ) |>
   baretable()
 ```
 
-# Employment history
+# Research Experience <!-- Employment history -->
 
-The `brief` style is a single line per entry: the years at the left, and the
-role beside them. `what` is set in bold, and `with` follows it in plain text.
+```{r}
+#| label: experience
+#| output: "asis"
 
-::: {.entries style="brief" fields="{what: Position, with: Organisation, when: Years}"}
-| Years     | Position                                     | Organisation                                                        |
-|-----------|----------------------------------------------|---------------------------------------------------------------------|
-| 2026--    | Vice-Chancellor's Distinguished Professor    | Department of Econometrics & Business Statistics, Monash University |
-| 2003--2026| Professor                                    | Department of Econometrics & Business Statistics, Monash University |
-| 2016      | KNAW Visiting Professor                      | TU/Eindhoven, Netherlands                                           |
-| 2001--2003| Associate Professor                          | Department of Econometrics & Business Statistics, Monash University |
-| 1998--2000| Senior Lecturer                              | Department of Econometrics & Business Statistics, Monash University |
-| 1995--1996| Lecturer                                     | Department of Mathematics and Statistics, Monash University         |
-| 1993--1994| Lecturer                                     | Department of Statistics, University of Melbourne                   |
-:::
+tibble::tribble(
+  ~Duration, ~Position,
+  "2026.6- ", "Research Assistant, The Hong Kong Polytechnic University", 
+  "2025.9-2026.6", "Research Assistant, Eastern Institute of Technology, Ningbo",
+  "2024.8-2025.8", "Research Intern, The Hong Kong University of Science and Technology (Guangzhou)", 
+) |>
+  baretable()
+```
 
 # Academic and research leadership
 
@@ -105,34 +103,15 @@ entry. Here the headings already match, and no `fields` is needed.
 +-------------+--------------------------+---------------------------------+
 :::
 
-# Editorial boards
+# Refereed research papers
 
-Markdown inside cells is preserved, and LaTeX special characters are escaped
-for you, so *emphasis* and a literal 100% both come out right. `what` is
-already set in bold by the style, so `*emphasis*` reads more clearly than
-`**bold**` would.
+```{r}
+vitae::bibliography_entries("./lyu_publications.bib")
+```
 
-::: {.entries style="brief"}
-| when            | what                     | with                                            |
-|-----------------|--------------------------|-------------------------------------------------|
-| 2023--2026      | Executive Editor         | *The R Journal*                                 |
-| 2011--2024      | Editor                   | *Journal of Statistical Software*               |
-| 2005--2018      | Editor-in-Chief          | *International Journal of Forecasting*          |
-| 2001--2004, 2019-- | Associate Editor      | *International Journal of Forecasting*          |
-| 1996--2001      | Book Review Editor       | *Australian Journal of Statistics*              |
-:::
+\vspace{0.1cm}
 
-# Selected awards and honours
-
-::: {.entries style="brief" fields="{what: Award, with: Awarded by, when: Year}"}
-| Year | Award             | Awarded by                     |
-|------|-------------------|--------------------------------|
-| 2021 | Pitman Medal      | Statistical Society of Australia |
-| 2021 | Fellow            | International Institute of Forecasters |
-| 2021 | Fellow            | Australian Academy of Science  |
-| 2020 | Fellow            | Academy of the Social Sciences in Australia |
-| 2007 | Moran Medal for Statistical Science | Australian Academy of Science |
-:::
+*Note: Publications under "Lyu, W." and "Lv, W." both refer to Wenbo Lyu.*
 
 # Research interests
 
