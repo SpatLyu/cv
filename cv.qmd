@@ -44,7 +44,7 @@ baretable = \(
       include.rownames = include.rownames,
       hline.after = hline.after,
       comment = FALSE,
-      tabular.environment = if_else(longtable, "longtable", "tabular"),
+      tabular.environment = dplyr::if_else(longtable, "longtable", "tabular"),
       floating = FALSE,
       size = size,
       add.to.row = add.to.row,
@@ -57,13 +57,16 @@ baretable = \(
 
 # Education and qualifications
 
-::: {.entries style="brief" fields="{what: Degree, with: Institution, when: Year}"}
-| Degree      | Institution                      | Year |
-|-------------|----------------------------------|------|
-| B.Sc.(Hons) | University of Melbourne          | 1988 |
-| Ph.D.       | University of Melbourne          | 1992 |
-| A.Stat.     | Statistical Society of Australia | 2000 |
-:::
+```{r}
+#| label: degrees
+#| output: "asis"
+
+tibble::tribble(
+  ~Degree, ~Institution, ~Year ,
+  "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  2025,
+) |>
+  baretable()
+```
 
 # Employment history
 
