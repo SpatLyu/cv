@@ -15,11 +15,47 @@ headcolor: "000088"
 format: hyndmancv-pdf
 ---
 
-# Education and qualifications
+```{r}
+#| label: setup
+#| include: false
 
-Each row of the table is one entry, and each column is a field on it. Columns
-keep their own heading, so `fields` is only needed where that heading is not
-the one the style expects. It is written `new: old`, like `dplyr::rename()`.
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  cache = FALSE
+)
+
+# Function to produce very basic table, no lines or headings
+baretable = \(
+  tbl,
+  digits = 0,
+  include.colnames = FALSE,
+  include.rownames = FALSE,
+  hline.after = NULL,
+  size = getOption("xtable.size", NULL),
+  add.to.row = getOption("xtable.add.to.row", NULL),
+  longtable = FALSE,
+  ...
+) {
+  xtable::xtable(tbl, digits = digits, ...) |>
+    print(
+      include.colnames = include.colnames,
+      include.rownames = include.rownames,
+      hline.after = hline.after,
+      comment = FALSE,
+      tabular.environment = if_else(longtable, "longtable", "tabular"),
+      floating = FALSE,
+      size = size,
+      add.to.row = add.to.row,
+      sanitize.text.function = function(x) {
+        x
+      }
+    )
+}
+```
+
+# Education and qualifications
 
 ::: {.entries style="brief" fields="{what: Degree, with: Institution, when: Year}"}
 | Degree      | Institution                      | Year |
