@@ -83,25 +83,11 @@ tibble::tribble(
   baretable()
 ```
 
-# Academic and research leadership
+# Research interests
 
-A grid table can hold a bullet list in a cell, so `why` carries several points
-per entry. The `detailed` style sets those as a bulleted elaboration under the
-entry. Here the headings already match, and no `fields` is needed.
-
-::: {.entries style="detailed"}
-+-------------+--------------------------+---------------------------------+
-| when        | what                     | why                             |
-+=============+==========================+=================================+
-| 2019--2022  | Head                     | - Department of Econometrics &  |
-|             |                          |   Business Statistics, Monash   |
-|             |                          | - Led a department of over 70   |
-|             |                          |   academic staff                |
-+-------------+--------------------------+---------------------------------+
-| 2001--2017  | Director                 | - Business & Economic           |
-|             |                          |   Forecasting Unit, Monash      |
-+-------------+--------------------------+---------------------------------+
-:::
+- My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
+- Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system*, **information theory** for quantifying *information flow* and *variable interactions*, **ordinary differential equations (ODEs)** for characterizing *spatiotemporal processes* and *system evolution*, as well as **counterfactual** and **potential outcomes** framework for estimating *causal effects*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
+- I specialize in *data analysis*, *statistical modeling*, and developing open-source analytical tools, including *R packages*, using **R**, **C++**, and **Python**, with a strong focus on *spatial analysis*. I actively contribute to the R geospatial community and am dedicated to advancing open-source geospatial software.
 
 # Refereed research papers
 
@@ -112,28 +98,6 @@ vitae::bibliography_entries("./lyu_publications.bib")
 \vspace{0.1cm}
 
 *Note: Publications under "Lyu, W." and "Lv, W." both refer to Wenbo Lyu.*
-
-# Research interests
-
-The `skills` style pairs a category with its members, written either as one
-string in `with` or as a list in `why`.
-
-::: {.entries style="skills"}
-+---------------+----------------------------------------+
-| what          | why                                    |
-+===============+========================================+
-| Methods       | - Forecast reconciliation              |
-|               | - Functional time series               |
-|               | - Anomaly detection                    |
-|               | - Time series visualisation            |
-+---------------+----------------------------------------+
-| Applications  | - Electricity demand                   |
-|               | - Demography                           |
-|               | - Tourism                              |
-+---------------+----------------------------------------+
-| Software      | - R, Rcpp, Stan                        |
-+---------------+----------------------------------------+
-:::
 
 # Grants
 
