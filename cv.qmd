@@ -92,29 +92,12 @@ tibble::tribble(
 # Refereed research papers
 
 ```{r}
-vitae::bibliography_entries("./lyu_publications.bib")
+#| label: research-papers
+#| output: asis
+
+vitae::detailed_entries("./lyu_publications.bib")
 ```
 
 \vspace{0.1cm}
 
 *Note: Publications under "Lyu, W." and "Lv, W." both refer to Wenbo Lyu.*
-
-# Grants
-
-Where the data already lives in a data frame, the same options are given as
-cell options instead, and the cell prints a table for the filter to pick up.
-See the README for that form.
-
-::: {.entries style="detailed"}
-+-------------+----------------------------------------------+---------------------------------------+
-| when        | what                                         | why                                   |
-+=============+==============================================+=======================================+
-| 2019--2024  | Australian Research Council Discovery Grant  | - *Forecasting large collections of   |
-|             |                                              |   related time series*                |
-|             |                                              | - \$540,000                           |
-+-------------+----------------------------------------------+---------------------------------------+
-| 2015--2018  | Australian Research Council Linkage Grant    | - *Forecasting electricity demand at  |
-|             |                                              |   the household level*                |
-|             |                                              | - \$320,000                           |
-+-------------+----------------------------------------------+---------------------------------------+
-:::
