@@ -1,0 +1,449 @@
+%% Template for a CV
+%% Author: Rob J Hyndman
+
+\documentclass[10pt,a4paper,]{article}
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage[sfdefault,lf,t]{carlito}
+
+% Change color to blue
+\usepackage{color,xcolor}
+\definecolor{headcolor}{HTML}{990000}
+
+% Change headboxcolor color to 
+\definecolor{headboxcolor}{HTML}{}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true,hidelinks]{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\date{\today}
+
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{Curriculum Vitae: \@name}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+\makeatletter
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\makeatother
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+
+\usepackage{calc}
+\newlength{\headerboxwidth}
+\setlength{\headerboxwidth}{\textwidth}
+%\addtolength{\headerboxwidth}{0.2cm}
+\makeatletter
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[0.9]{\headerboxwidth}{\sf\color{headboxcolor}\hfil
+\hbox to 0.98\textwidth{\begin{tabular}{l}
+\\[-0.3cm]
+\LARGE\textbf{\@name}
+\\[0.1cm]\large B.Sc. Graduate\\[0.6cm]
+\normalsize\textbf{Curriculum Vitae}\\
+\normalsize \today
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rl@{}}
+\@info
+\end{tabular}}}\hfil
+}
+\vspace*{0.2cm}}
+\makeatother
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\color{headcolor}\large\sf\bfseries}
+\titleformat*{\subsection}{\color{headcolor}\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% Make nicer bullets
+\renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome5}
+%\usepackage[t1,scale=0.86]{sourcecodepro}
+
+\name{Wenbo Lyu}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+\info{%
+\raisebox{-0.05cm}{\imagetop{\faIcon{map-marker-alt}}} &  \imagetop{\begin{tabular}{@{}l@{}}Hong
+Kong\end{tabular}}\\ %
+\faIcon{home} & \href{https://spatlyu.github.io}{spatlyu.github.io}\\% %
+%
+%
+\faIcon{envelope} & \href{mailto:lyu.geosocial@gmail.com}{\nolinkurl{lyu.geosocial@gmail.com}}\\%
+%
+\faIcon{github} & \href{https://github.com/SpatLyu}{SpatLyu}\\%
+%
+%
+%
+\faIcon{orcid} & \href{https://orcid.org/0009-0002-6003-3800}{0009-0002-6003-3800}\\%
+}
+
+
+%\usepackage{inconsolata}
+
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+% Pandoc CSL macros
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+
+
+\section{Some stuff about me}\label{some-stuff-about-me}
+
+\begin{itemize}
+\tightlist
+\item
+  My research interests lie in \textbf{advancing methodologies in
+  spatial causal inference} and \textbf{developing high-performance
+  computational tools}, with a primary focus on \emph{R packages}.
+\item
+  I specialize in \emph{data analysis}, \emph{statistical modeling}, and
+  developing open-source analytical tools, including \emph{R packages},
+  using \textbf{R}, \textbf{C++}, and \textbf{Python}, with a strong
+  focus on \emph{spatial analysis}. I actively contribute to the R
+  geospatial community and am dedicated to advancing open-source
+  geospatial software.
+\item
+  Currently, my work centers on \textbf{Empirical Dynamic Modeling
+  (EDM)} framework for modeling \emph{dynamic system},
+  \textbf{information theory} for quantifying \emph{information flow}
+  and \emph{variable interactions}, \textbf{ordinary differential
+  equations (ODEs)} for characterizing \emph{spatiotemporal processes}
+  and \emph{system evolution}, as well as \textbf{counterfactual} and
+  \textbf{potential outcomes} framework for estimating \emph{causal
+  effects}. I am particularly interested in leveraging these approaches
+  to address critical challenges in \emph{urban sustainability},
+  \emph{climate change mitigation}, and broader global issues.
+\end{itemize}
+
+\section{Education}\label{education}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2021.8-2025.6 & \parbox[t]{0.85\textwidth}{%
+\textbf{B.Sc. In Geographic Information Science}\hfill{\footnotesize Shaanxi Normal University}\newline
+  Xi'an, Shaanxi\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Research Experience}\label{research-experience}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2026.6-2026.12 & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Assistant}\hfill{\footnotesize The Hong Kong Polytechnic University}\newline
+  Hong Kong\par%
+  \empty%
+\vspace{\parsep}}\\
+2024.8-2026.6 & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Intern}\hfill{\footnotesize The Hong Kong University of Science and Technology (Guangzhou)}\newline
+  Guangzhou, Guangdong\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Publications}\label{publications}
+
+\phantomsection\label{refs-d23da96b40208019b6f3580b0fc3c15f}
+\begin{CSLReferences}{0}{0}
+\bibitem[\citeproctext]{ref-lyu2026gcmc}
+\CSLLeftMargin{1. }%
+\CSLRightInline{Lyu, W., Dai, S., Song, Y., Zhao, W., Yi, W., Xiao, Y.,
+\& Jia, N. (2026). Measuring causal strengths from spatial
+cross-sectional data with geographical cross mapping cardinality.
+\emph{International Journal of Geographical Information Science}, 1--23.
+\url{https://doi.org/10.1080/13658816.2026.2687121}}
+
+\bibitem[\citeproctext]{ref-lyu2026tEDM}
+\CSLLeftMargin{2. }%
+\CSLRightInline{Lyu, W., Lei, Y., Yi, W., Song, Y., Li, X., Dai, S.,
+Qin, Y., \& Zhao, W. (2026). Causal discovery in urban data with
+temporal empirical dynamic modeling: The R package tEDM.
+\emph{Computers, Environment and Urban Systems}, \emph{127}, 102435.
+\url{https://doi.org/10.1016/j.compenvurbsys.2026.102435}}
+
+\bibitem[\citeproctext]{ref-lyu2025gdverse}
+\CSLLeftMargin{3. }%
+\CSLRightInline{Lv, W., Lei, Y., Liu, F., Yan, J., Song, Y., \& Zhao, W.
+(2025). gdverse: An R package for spatial stratified heterogeneity
+family. \emph{Transactions in GIS}, \emph{29}(2), e70032.
+\url{https://doi.org/10.1111/tgis.70032}}
+
+\bibitem[\citeproctext]{ref-lyu2024veg}
+\CSLLeftMargin{4. }%
+\CSLRightInline{Lv, W., Liu, F., Cai, K., Cao, Y., Deng, M., Liang, W.,
+Yan, J., \& Wang, G. (2024). Distinguishing the impacts and gradient
+effects of climate change and human activities on vegetation cover in
+the weihe river basin, china. \emph{Journal of Geophysical Research:
+Biogeosciences}, \emph{129}(10), e2024JG008297.
+\url{https://doi.org/10.1029/2024jg008297}}
+
+\bibitem[\citeproctext]{ref-li2026grs}
+\CSLLeftMargin{5. }%
+\CSLRightInline{Li, B., Lv, W., Ding, H., Song, Y., \& Zhao, W. (2026).
+New-type urbanization policy, urban expansion, and employment quality in
+chinese cities: Evidence from a quasi-natural experiment in China.
+\emph{GIScience \& Remote Sensing}, \emph{63}(1), 2716413.
+\url{https://doi.org/10.1080/15481603.2026.2716413}}
+
+\bibitem[\citeproctext]{ref-xu2026gcmc_case1}
+\CSLLeftMargin{6. }%
+\CSLRightInline{Xu, L., Shi, H., Lyu, W., Zhang, Y., \& Zhao, H. (2026).
+Beyond correlation: Unveiling the causal link between street-scapes and
+recreational walking/cycling. \emph{Journal of Transport Geography},
+\emph{136}, 104789.
+\url{https://doi.org/10.1016/j.jtrangeo.2026.104789}}
+
+\bibitem[\citeproctext]{ref-chen2025gcrf}
+\CSLLeftMargin{7. }%
+\CSLRightInline{Chen, C., Song, Y., Lv, W., Shemery, A., Hampson, K.,
+Yi, W., Zhong, Y., \& Wu, P. (2025). Predicting pavement cracking
+performance using laser scanning and geocomplexity‐enhanced machine
+learning. \emph{Computer-Aided Civil and Infrastructure Engineering}.
+\url{https://doi.org/10.1111/mice.13489}}
+
+\end{CSLReferences}
+
+\vspace{0.1cm}
+
+\emph{Note: Publications under ``Lyu, W.'' and ``Lv, W.'' both refer to
+Wenbo Lyu.}
+
+\section{Honor}\label{honor}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2024.12 & \parbox[t]{0.85\textwidth}{%
+\textbf{Longi Non-Education Major Scholarship}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2024.11 & \parbox[t]{0.85\textwidth}{%
+\textbf{First Prize in the 13th National University Student GIS Application Skills Competition}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2024.06 & \parbox[t]{0.85\textwidth}{%
+\textbf{National University Student Innovation and Entrepreneurship Training Program Qualified Completion}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2023.12 & \parbox[t]{0.85\textwidth}{%
+\textbf{Grand Prize in the 12th National University Student GIS Application Skills Competition}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2023.11 & \parbox[t]{0.85\textwidth}{%
+\textbf{First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2023.12 & \parbox[t]{0.85\textwidth}{%
+\textbf{Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2021.10 & \parbox[t]{0.85\textwidth}{%
+\textbf{Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University}\hfill{\footnotesize }\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Unpublished}\label{unpublished}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+Co-First Author (1st) & \parbox[t]{0.85\textwidth}{%
+\textbf{Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships}\hfill{\footnotesize Submitted to AAAG, currently under third-round review}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+Co-First Author (2nd) & \parbox[t]{0.85\textwidth}{%
+\textbf{Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data}\hfill{\footnotesize Submitted to IJGIS, currently under second-round review}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+First Author & \parbox[t]{0.85\textwidth}{%
+\textbf{Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data}\hfill{\footnotesize Submitted to Comms Phys, currently in revision}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+First Author & \parbox[t]{0.85\textwidth}{%
+\textbf{Unveiling interaction between spatial processes with information decomposition}\hfill{\footnotesize In writing}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+First Author & \parbox[t]{0.85\textwidth}{%
+\textbf{Pattern Causality for Detecting Interactions with the R Package pc}\hfill{\footnotesize In writing}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+First Author & \parbox[t]{0.85\textwidth}{%
+\textbf{coupling: Coupling Coordination Analysis in R}\hfill{\footnotesize Plan}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+First Author & \parbox[t]{0.85\textwidth}{%
+\textbf{Measuring spatial stratified heterogeneity via information imbalance}\hfill{\footnotesize Plan}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+First Author & \parbox[t]{0.85\textwidth}{%
+\textbf{Spatial causal discovery under latent confounders via deep orthogonal representation learning}\hfill{\footnotesize Plan}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Developed Spatial Analysis
+Toolkit}\label{developed-spatial-analysis-toolkit}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1310}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7024}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Package
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Language
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\href{https://cran.r-project.org/package=spEDM}{spEDM} & Spatial
+Empirical Dynamic Modeling & C++, R \\
+\href{https://cran.r-project.org/package=tEDM}{tEDM} & Temporal
+Empirical Dynamic Modeling & C++, R \\
+\href{https://github.com/stscl/infoxtr}{infoxtr} & Information-Theoretic
+Measures for Revealing Variable Interactions & C++, R \\
+\href{https://github.com/stscl/pc}{pc} & Pattern Causality Analysis &
+C++, R \\
+\href{https://cran.r-project.org/package=gdverse}{gdverse} & Analysis of
+Spatial Stratified Heterogeneity & R, C++, Python \\
+\href{https://cran.r-project.org/package=sdsfun}{sdsfun} & Spatial Data
+Science Complementary Features & R, C++ \\
+\href{https://github.com/stscl/coupling}{coupling} & Coupling
+Coordination Analysis & C++, R \\
+\end{longtable}
+
+\end{document}

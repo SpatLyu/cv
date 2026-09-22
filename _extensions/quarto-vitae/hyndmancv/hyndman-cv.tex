@@ -1,0 +1,395 @@
+%% A Quarto CV template in the style of Rob J Hyndman's CV.
+%%
+%% Adapted from https://github.com/robjhyndman/CV, by Rob J Hyndman and Cynthia
+%% Huang, to render vitae-style data-driven entries. The differences from
+%% upstream are marked `vitae:` throughout, and are:
+%%
+%%   * the entry macros (\cventryline and friends) and the `entries/*.tex`
+%%     listings that call them, which is what the vitae filter renders into;
+%%   * upstream's biblatex block, and its unconditional
+%%     `\addbibresource{temp.bib}` -- a file its own build writes first -- are
+%%     dropped entirely. Bibliographies are the curriculum extension's job now,
+%%     rendered by its `.entries style="bibliography"` carriers through
+%%     Quarto's own citeproc partial, invoked near the entry macros below, so
+%%     this renders standalone with no bibliography-specific styling of its own;
+%%   * `iftex` in place of the deprecated `ifxetex`/`ifluatex`/`fixltx2e`;
+%%   * several preamble blocks Pandoc's own default template also needs --
+%%     tables, graphics, tightlist, PDF metadata/bookmarks -- now come from
+%%     Quarto's shared partials rather than a copy kept here.
+
+\documentclass[$if(fontsize)$$fontsize$$else$10pt$endif$,$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$$else$a4paper$endif$,$for(classoption)$$classoption$$sep$,$endfor$]{article}
+$if(fontfamily)$
+\usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
+$else$
+\usepackage[scale=0.9]{sourcecodepro}
+\usepackage[default,t,lf,scale=0.9]{FiraSans}
+$endif$
+
+% Accent colour, used for the header box and the section headings.
+\usepackage{color,xcolor}
+$if(headcolor)$
+\definecolor{headcolor}{HTML}{$headcolor$}
+$else$
+\definecolor{headcolor}{HTML}{990000}
+$endif$
+
+% vitae: `iftex` supersedes ifxetex/ifluatex, and `fixltx2e` is now part of the
+% kernel and warns when loaded.
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
+  \usepackage[utf8]{inputenc}
+$if(euro)$
+  \usepackage{eurosym}
+$endif$
+\else % if luatex or xetex
+  \ifXeTeX
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+$if(euro)$
+  \newcommand{\euro}{€}
+$endif$
+$if(mainfont)$
+    \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
+$endif$
+$if(sansfont)$
+    \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
+$endif$
+$if(monofont)$
+    \setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$for(monofontoptions)$$monofontoptions$$sep$,$endfor$$endif$]{$monofont$}
+$endif$
+$if(mathfont)$
+    \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
+$endif$
+$if(CJKmainfont)$
+    \usepackage{xeCJK}
+    \setCJKmainfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
+$endif$
+\fi
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[$for(microtypeoptions)$$microtypeoptions$$sep$,$endfor$]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+% vitae: Quarto's own partials -- bookmark/xurl/verbatim-in-note/links-as-notes
+% handling, then PDF metadata (pdftitle/pdfauthor/...) and the colorlinks vs.
+% hidelinks choice, which already matches `_extension.yml`'s `colorlinks:
+% false` without anything extra here.
+$after-header-includes.latex()$
+$hypersetup.latex()$
+$if(geometry)$
+\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+$else$
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+$endif$
+
+$if(listings)$
+\usepackage{listings}
+$endif$
+$if(lhs)$
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$endif$
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+% vitae: Quarto's own partials. tables.tex also covers the footnote-in-table
+% fix above; graphics.tex defines \pandocbounded, which this Pandoc version
+% (3.6.3) wraps every image in -- the template's own hand-rolled
+% \maxwidth/\Gin@nat@width version never defined it, so any image would have
+% failed to compile.
+$tables.tex()$
+$graphics.tex()$
+% links-as-notes is handled by after-header-includes.latex() above.
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
+$if(indent)$
+$else$
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+$endif$
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+$tightlist.tex()$
+$if(numbersections)$
+\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+$if(dir)$
+\ifXeTeX
+  % load bidi as late as possible as it modifies e.g. graphicx
+  $if(latex-dir-rtl)$
+  \usepackage[RTLdocument]{bidi}
+  $else$
+  \usepackage{bidi}
+  $endif$
+\fi
+$endif$
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\providecommand{\subtitle}[1]{}
+\subtitle{$subtitle$}
+$endif$
+
+$if(author)$
+\author{$author$}
+$endif$
+
+$if(date)$
+\date{$date$}
+$else$
+\date{\today}
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{$if(docname)$$docname$$else$Curriculum Vitae$endif$: \@name}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+\makeatletter
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\makeatother
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+
+\usepackage{calc}
+\newlength{\headerboxwidth}
+\setlength{\headerboxwidth}{\textwidth}
+\makeatletter
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
+\hbox to 0.98\textwidth{\begin{tabular}{l}
+\\[-0.3cm]
+\LARGE\textbf{\@name}
+$if(position)$\\[0.1cm]\large $position$\\[0.3cm]$else$\\[0.4cm]$endif$
+\normalsize\textbf{$if(docname)$$docname$$else$Curriculum Vitae$endif$}\\
+\normalsize $if(date)$$date$$else$\today$endif$
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rl@{}}\\[-0.7cm]
+\@info
+\end{tabular}}}\hfil
+}
+\vspace*{0.2cm}}
+\makeatother
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\color{headcolor}\large\sf\bfseries}
+\titleformat*{\subsection}{\color{headcolor}\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% Make nicer bullets
+\renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome5}
+
+%% ---------------------------------------------------------------------------
+%% vitae: entry macros
+%%
+%% Upstream sets its listings as bare `tabular`s built by an R helper. These
+%% macros take the same two-column shape -- a date at the left, the entry
+%% beside it -- but as paragraphs rather than a table, so that a long section
+%% breaks across pages between entries. The `entries/*.tex` listings in this
+%% extension are what call them.
+%%
+%% A `tabular` sizes a column to its widest cell for free, which is why
+%% upstream never had a column width to set. Paragraphs do not, so each
+%% listing measures its own labels first: `entries/*.tex` loops over the
+%% entries twice, once calling \cvmeasure and once emitting them. That keeps
+%% the column tight to the dates a section actually has -- narrow for years,
+%% wider for spans -- with nothing to configure.
+%% ---------------------------------------------------------------------------
+
+% Gap between the label column and the entry beside it.
+\newlength{\cvlabelsep}
+\setlength{\cvlabelsep}{0.75em}
+
+\newlength{\cvcolwidth}   % widest label seen so far in this listing
+\newlength{\cvcoltotal}   % that, plus the gap: the column the entry starts at
+\newlength{\cvlabelwidth} % scratch, for one measurement
+\newlength{\cvmaxcolwidth}
+
+% A listing. The group is what keeps one section's measurements from leaking
+% into the next.
+\newenvironment{cvlisting}{%
+  \par
+  \setlength{\cvcolwidth}{0pt}%
+  % A label past this takes its own line rather than squeezing the entry into
+  % what is left, so one outlier cannot narrow the whole listing.
+  \setlength{\cvmaxcolwidth}{0.32\linewidth}%
+}{%
+  \par
+}
+
+% Grow the column to fit one label. No output, and vertical mode throughout,
+% so the measuring loop contributes nothing to the page.
+\newcommand{\cvmeasure}[1]{%
+  \settowidth{\cvlabelwidth}{#1}%
+  \ifdim\cvlabelwidth>\cvcolwidth
+    \ifdim\cvlabelwidth>\cvmaxcolwidth
+      \setlength{\cvcolwidth}{\cvmaxcolwidth}%
+    \else
+      \setlength{\cvcolwidth}{\cvlabelwidth}%
+    \fi
+  \fi}
+
+% The measured column, plus its gap. A listing whose labels are all empty
+% measures 0pt and gets no gap either, so it sets flush left rather than
+% carrying an empty column.
+\newcommand{\cvsetcolumn}{%
+  \setlength{\cvcoltotal}{\cvcolwidth}%
+  \ifdim\cvcoltotal>0pt\addtolength{\cvcoltotal}{\cvlabelsep}\fi}
+
+% One entry: #1 set in a column of width #2, #3 wrapping beside it with a
+% hanging indent so continuation lines stay clear of the column.
+%
+% A label wider than its column would otherwise overlap the entry, since
+% \makebox does not clip -- a real case, as a date such as
+% `2001--2004, 2019--` is far wider than a plain year. So it is measured
+% first, and an over-long one takes the whole line with the entry starting
+% beneath it. \hangafter=1 already indents that second line to the column.
+\newcommand{\cvcolumnentry}[3]{%
+  \par\noindent
+  \settowidth{\cvlabelwidth}{#1}%
+  \ifdim\cvlabelwidth>#2\relax
+    % Over-long label: it takes a line of its own, and the entry follows as a
+    % paragraph indented to the column throughout (\hangafter=0 indents from
+    % the first line, so no \hspace is needed and none may be added).
+    #1\par\noindent
+    \hangindent=#2\hangafter=0
+    #3\par
+  \else
+    % Label fits: the entry sits beside it, and only its continuation lines
+    % are indented clear of the column.
+    \hangindent=#2\hangafter=1
+    \makebox[#2][l]{#1}#3\par
+  \fi}
+
+% \cvsetcolumn is called per entry rather than once between the two loops:
+% it is idempotent and costs nothing, and it saves the listings from having to
+% emit a separator command between them.
+\newcommand{\cventryline}[2]{\cvsetcolumn\cvcolumnentry{#1}{\cvcoltotal}{#2}}
+\newcommand{\cvskillline}[2]{\cvsetcolumn\cvcolumnentry{\textbf{#1}}{\cvcoltotal}{#2}}
+
+% Measuring counterparts, matching the above so that what is measured is what
+% is later set: a skills label is bold, and bold is wider.
+\newcommand{\cvmeasureentry}[1]{\cvmeasure{#1}}
+\newcommand{\cvmeasureskill}[1]{\cvmeasure{\textbf{#1}}}
+
+% The `why` elaboration under a detailed entry, indented to the entry column.
+%
+% beginpenalty forbids a page break between an entry and the first of its
+% bullets, which otherwise happens readily and strands the entry alone at the
+% foot of a page -- something upstream got for free by keeping an entry inside
+% one table row. Breaks *between* bullets stay allowed, so a long elaboration
+% can still split rather than forcing the whole entry to the next page.
+\newenvironment{cvitems}{%
+  \begin{itemize}[
+    topsep=0.2ex, partopsep=0pt, itemsep=0.2ex, parsep=0pt,
+    beginpenalty=10000,
+    leftmargin=\dimexpr\cvcoltotal+1.2em\relax, labelsep=0.5em]%
+}{%
+  \end{itemize}%
+}
+
+% Vertical separation between entries in a listing.
+\newcommand{\cventrysep}{\vspace{0.6ex}}
+
+\name{$name$$if(surname)$ $surname$$endif$}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+\info{%
+$if(address)$\raisebox{-0.05cm}{\imagetop{\faIcon{map-marker-alt}}} &  \imagetop{\begin{tabular}{@{}l@{}}$address$\end{tabular}}\\$endif$ %
+$if(www)$\faIcon{home} & \href{http://$www$}{$www$}\\$endif$% %
+$if(phone)$\faIcon{phone-alt} & $phone$\\$endif$%
+$if(email)$\faIcon{envelope} & $email$\\$endif$%
+$if(twitter)$\faIcon{twitter} & \href{https://twitter.com/$twitter$}{@$twitter$}\\$endif$%
+$if(github)$\faIcon{github} & \href{https://github.com/$github$}{$github$}\\$endif$%
+$if(linkedin)$\faIcon{linkedin} & \href{https://www.linkedin.com/in/$linkedin$}{$linkedin$}\\$endif$%
+$if(scholar)$\faIcon{google} & \href{https://scholar.google.com/citations?user=$scholar$}{$scholar$}\\$endif$%
+$if(orcid)$\faIcon{orcid} & \href{https://orcid.org/$orcid$}{$orcid$}\\$endif$%
+}
+
+$if(linestretch)$
+\usepackage{setspace}
+$endif$
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+% vitae: CSL macros for bibliography entries (\citeproc, CSLReferences,
+% \CSLLeftMargin and friends), from Quarto's own shared partial rather than a
+% copy kept here. Its `csl-refs` guard is set by Pandoc's LaTeX writer itself
+% once it sees a csl-entry/refs div anywhere in the document -- which a
+% bibliography carrier's citeproc passthrough always is -- so nothing extra is
+% needed to trigger it from this template or from curriculum's Lua.
+$citations.tex()$
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+$if(linestretch)$
+\setstretch{$linestretch$}
+$endif$
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+\end{document}

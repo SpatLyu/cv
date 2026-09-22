@@ -1,0 +1,46 @@
+title: Hyndman CV
+author: Mitchell O'Hara-Wild
+version: 0.1.0
+quarto-required: ">=1.7.0"
+contributes:
+  formats:
+    pdf:
+      # Upstream's own CV builds with pdflatex, and the default fonts
+      # (FiraSans, Source Code Pro) are the pdftex-compatible packages rather
+      # than system fonts, so there is nothing here needing a Unicode engine.
+      pdf-engine: pdflatex
+      template: hyndman-cv.tex
+      papersize: a4
+      fontsize: 10pt
+      # The template loads hyperref with `hidelinks`, and marks the header
+      # contacts with FontAwesome icons rather than colour. Quarto's pdf format
+      # would otherwise default this to true and print them blue.
+      colorlinks: false
+      # Shown in the header box, in the running head, and above the date.
+      docname: Curriculum Vitae
+      # Sections are the article class's own \section, styled by titlesec, so
+      # unlike awesome-cv there is no heading mapping to do and no post-quarto
+      # filter here.
+      #
+      # Default knitr engine printing data directly as a markdown table, which
+      # is what lets a code cell carry entries.
+      df-print: kable
+      # A CV is a document of listings; echoing the code that builds them is
+      # almost never wanted.
+      echo: false
+      # Provided by the embedded copy of quarto-vitae/curriculum, under
+      # _extensions/quarto-vitae/curriculum. Filters are matched by the
+      # embedded extension's directory name (its extension id), not by the Lua
+      # filter's filename -- so this must say "curriculum", matching
+      # quarto-vitae/curriculum's own directory name, not "vitae-entries".
+      # Refresh with:
+      #   quarto update quarto-vitae/curriculum --embed hyndmancv
+      filters:
+        - curriculum
+      # Style names this template implements, for the filter's fallback
+      # warning. The entries/ directory is deliberately absent from any
+      # format-resources: resources are copied after pandoc runs, so a template
+      # staged that way would resolve only on a second render. The filter reads
+      # _extensions/**/entries/ directly.
+      vitae:
+        styles: [detailed, brief, skills]

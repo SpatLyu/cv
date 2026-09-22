@@ -1,13 +1,13 @@
 ---
-name: Wenbo Lv
-position: "undergraduate"
+name: Wenbo Lyu
+position: "B.Sc. Graduate"
 github: SpatLyu
 www: spatlyu.github.io
 orcid: 0009-0002-6003-3800
 email: "lyu.geosocial@gmail.com"
-address: "Xi'an, Shaanxi"
-# date: "`r Sys.Date()`"
-output: vitae::moderncv
+address: "Hong Kong"
+#date: "`r Sys.Date()`"
+output: vitae::awesomecv
 ---
 
 ```{r setup, include=FALSE}
@@ -17,20 +17,30 @@ library(vitae)
 
 # Some stuff about me
 
-- My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
-- Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system* and **Difference-in-Differences (DID)** methods for *event studies*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
-- I possess expertise in *data analysis*, *statistical modeling*, and the development of *R packages* and open-source analytical tools utilizing **R**, **C++**, and **Python**.
-- I have contributed to the **development** and **maintenance** of several open-source spatial analysis tools within the R community and remain dedicated to **advancing open-source geospatial analysis software**.
+-   My research interests lie in **advancing methodologies in spatial causal inference** and **developing high-performance computational tools**, with a primary focus on *R packages*.
+-   I specialize in *data analysis*, *statistical modeling*, and developing open-source analytical tools, including *R packages*, using **R**, **C++**, and **Python**, with a strong focus on *spatial analysis*. I actively contribute to the R geospatial community and am dedicated to advancing open-source geospatial software.
+-   Currently, my work centers on **Empirical Dynamic Modeling (EDM)** framework for modeling *dynamic system*, **information theory** for quantifying *information flow* and *variable interactions*, **ordinary differential equations (ODEs)** for characterizing *spatiotemporal processes* and *system evolution*, as well as **counterfactual** and **potential outcomes** framework for estimating *causal effects*. I am particularly interested in leveraging these approaches to address critical challenges in *urban sustainability*, *climate change mitigation*, and broader global issues.
 
 # Education
 
 ```{r}
-library(tibble)
-tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "BSc In Geographic Information Science", "2021-2025", "Shaanxi Normal University", "Xi'an, Shaanxi",
-) %>%
-  detailed_entries(Degree, Year, Institution, Where)
+tibble::tribble(
+  ~ Degree, ~ Duration, ~ Institution, ~ Where,
+  "B.Sc. In Geographic Information Science", "2021.8-2025.6", "Shaanxi Normal University", "Xi'an, Shaanxi",
+) |> 
+  detailed_entries(Degree, Duration, Institution, Where)
+```
+
+# Research Experience
+
+```{r}
+tibble::tribble(
+  ~ Position, ~ Duration, ~ Institution, ~ Where,
+    "Research Assistant", "2026.6-2026.12", "The Hong Kong Polytechnic University", "Hong Kong",
+  # "Research Assistant", "2025.9-2026.6", "Eastern Institute of Technology, Ningbo", "Ningbo, Zhejiang",
+  "Research Intern", "2024.8-2026.6", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong",
+) |> 
+  detailed_entries(Position, Duration, Institution, Where)
 ```
 
 # Publications
@@ -39,10 +49,14 @@ tribble(
 bibliography_entries("../lyu_publications.bib")
 ```
 
+\vspace{0.1cm}
+
+*Note: Publications under "Lyu, W." and "Lv, W." both refer to Wenbo Lyu.*
+
 # Honor
 
 ```{r}
-tribble(
+tibble::tribble(
   ~ Awards, ~ Date,
   "Longi Non-Education Major Scholarship", "2024.12",
   "First Prize in the 13th National University Student GIS Application Skills Competition", "2024.11",
@@ -50,72 +64,96 @@ tribble(
   "Grand Prize in the 12th National University Student GIS Application Skills Competition", "2023.12",
   "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
   "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
-  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10"
-) %>%
+  "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
+) |> 
   detailed_entries(Awards,Date)
 ```
 
 # Unpublished
 
 ```{r}
-tribble(
+tibble::tribble(
   ~ Name, ~ Role, ~ Status,
-  "Measuring causal associations by geographical cross mapping cardinality", "First Author", "Submitted to IJGIS, currently under review",
-  # "Zoning-dependent determinants of greenspace exposure: Evidence from multi-source remote sensing observations in China","Second Author", "Submitted to IEEE Geoscience and Remote Sensing Letter, currently under review",
-  "Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province", "Third Author", "Submitted to Land Use Policy, currently under review",
-  "Decomposing spatial causality through mutual information", 
+  "Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships",
+  "Co-First Author (1st)", "Submitted to AAAG, currently under third-round review",
+  "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
+  "Co-First Author (2nd)", "Submitted to IJGIS, currently under second-round review",
+  "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
+  "First Author", "Submitted to Comms Phys, currently in revision",
+  "Unveiling interaction between spatial processes with information decomposition",
+  "First Author", "In writing",
+  "Pattern Causality for Detecting Interactions with the R Package pc",
+  "First Author", "In writing",
+  "coupling: Coupling Coordination Analysis in R",
   "First Author", "Plan",
-  "On the role of explicit spatial information in stratified heterogeneity", "First Author", "Plan",
-  "Geocomplexity Mitigates Spatial Bias", "First Author", "Plan"
-) %>%
+  "Measuring spatial stratified heterogeneity via information imbalance",
+  "First Author", "Plan",
+  "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
+  "First Author", "Plan",
+) |> 
   detailed_entries(Name, Role, Status)
 ```
 
 <!-- # In research -->
 
 <!-- ```{r} -->
+
 <!-- tribble( -->
+
 <!--   ~ Name, ~ Role, ~ Date, ~ Details, -->
+
 <!--   "Extract Urban Spatial Boundaries in Xi'an City Using Deep Learning", "Leader", "", -->
+
 <!--   "Utilized advanced spatial sampling methods and unsupervised algorithms to automatically generate sample sets. Employed geographically weighted neural networks combined with logistic regression to extract urban spatial boundaries" -->
+
 <!-- ) %>% -->
+
 <!--   detailed_entries(Name, Role, Date, Details) -->
+
 <!-- ``` -->
 
 # Developed Spatial Analysis Toolkit
 
-- **[spEDM](https://github.com/stscl/spEDM)**  
-  Inferring causation from spatial cross-sectional data through empirical dynamic modeling (EDM), with methodological extensions including geographical convergent cross mapping, geographical cross mapping cardinality and spatially convergent partial cross mapping, as well as the spatial granger causality. Data I/O is handled at the **R** level, while the rest is fully implemented using **modern C++**. 
+| Package | Description | Language |
+|-----------|----------------------------------------------------------|--------------|
+| [spEDM](https://cran.r-project.org/package=spEDM) | Spatial Empirical Dynamic Modeling | C++, R |
+| [tEDM](https://cran.r-project.org/package=tEDM) | Temporal Empirical Dynamic Modeling | C++, R |
+| [infoxtr](https://github.com/stscl/infoxtr) | Information-Theoretic Measures for Revealing Variable Interactions | C++, R |
+| [pc](https://github.com/stscl/pc) | Pattern Causality Analysis | C++, R |
+| [gdverse](https://cran.r-project.org/package=gdverse) | Analysis of Spatial Stratified Heterogeneity | R, C++, Python |
+| [sdsfun](https://cran.r-project.org/package=sdsfun) | Spatial Data Science Complementary Features | R, C++ |
+| [coupling](https://github.com/stscl/coupling) | Coupling Coordination Analysis | C++, R |
 
-- **[gdverse](https://github.com/stscl/gdverse)**  
-  Detecting spatial associations via spatial stratified heterogeneity, accounting for spatial dependencies, interpretability, complex interactions, and robust stratification. In addition, it supports the spatial stratified heterogeneity family described in Lv et al. (2025)<doi:10.1111/tgis.70032>. Developed using **R**, **C++**, and **Python**.  
+<!-- | [gobi](https://github.com/stscl/gobi) | General ODE-Based Causal Inference | -->
 
-- **[sesp](https://github.com/stscl/sesp)**  
-  Implements the *Spatially Explicit Stratified Power* model, a robust framework for spatial analysis combining stratification and statistical power. Written in **R** and **C++**.  
+<!-- C++, R | | [geocomplexity](https://cran.r-project.org/package=geocomplexity) | -->
 
-- **[geocomplexity](https://github.com/ausgis/geocomplexity)**  
-  Focuses on mitigating spatial biases by leveraging geographical complexity. Combines computational efficiency with flexibility, developed in **C++**, **R**, and **C**.  
+<!-- Mitigate Spatial Bias Through Geographical Complexity | C++, R, C | | -->
 
-- **[cisp](https://github.com/stscl/cisp)**  
-  Introduces a novel *Correlation Indicator Based on Spatial Patterns* for measuring spatial correlations with high precision. Written in **R**.  
+<!-- [HSAR](https://cran.r-project.org/package=HSAR) | Hierarchical Spatial -->
 
-- **[geosimilarity](https://github.com/ausgis/geosimilarity)**  
-  Provides methods for calculating *Geographically Optimal Similarity*, enabling better spatial predict. Developed in **R**.  
+<!-- Autoregressive Model | C++, R | | [GD](https://cran.r-project.org/package=GD) | -->
 
-- **[GD](https://github.com/ausgis/GD)**  
-  Implements *Geographical Detectors*, a toolkit for assessing spatial factors influencing heterogeneity. Fully developed in **R**.  
+<!-- Geographical Detectors for Assessing Spatial Factors | R | | -->
 
-- **[sdsfun](https://github.com/stscl/sdsfun)**  
-  Adds complementary features for *Spatial Data Science*, providing user-friendly functionalities for geospatial research. Developed using **C++** and **R**.  
+<!-- [geosimilarity](https://cran.r-project.org/package=geosimilarity) | Geographically Optimal Similarity | R | -->
 
-- **[geocn](https://github.com/stscl/geocn)**  
-  Simplifies the process of loading and managing spatial datasets of China, supporting research with localized datasets. Developed in **R**.  
+<!-- | [itmsa](https://cran.r-project.org/package=itmsa) | Information-Theoretic Measures for Spatial Association | C++, R | -->
 
-- **[qgisprocess](https://github.com/r-spatial/qgisprocess)**  
-  Offers an **R** interface to *QGIS processing algorithms*, enabling seamless integration of QGIS functionalities into R workflows.  
+<!-- | [sesp](https://github.com/stscl/sesp) | Spatially Explicit Stratified Power | R, C++ | -->
 
-- **[spEcula](https://github.com/SpatLyu/spEcula)**  
-  Provides advanced methods for *Spatial Prediction* in **R**, supporting applications ranging from environmental modeling to spatial econometrics.  
+<!-- | [cisp](https://cran.r-project.org/package=cisp) | A Correlation Indicator Based On Spatial Patterns | R | -->
 
-- **[tidyrgeoda](https://github.com/SpatLyu/tidyrgeoda)**  
-  Offers a tidy interface for *rgeoda*, bridging geospatial analysis and tidyverse workflows to streamline data handling and modeling in **R**.  
+<!-- | [geocn](https://github.com/stscl/geocn) | Loads Spatial Data Sets of China | R | -->
+
+<!-- | [spEcula](https://github.com/SpatLyu/spEcula) | Spatial Prediction Methods In R | R | -->
+
+<!-- | [tidyrgeoda](https://github.com/SpatLyu/tidyrgeoda) | A tidy interface for rgeoda | R | -->
+
+<!-- | [figpatch](https://cran.r-project.org/package=figpatch) | Easily Arrange External Figures with Patchwork Alongside 'ggplot2' Figures | R | -->
+
+<!-- | [qgisprocess](https://cran.r-project.org/package=qgisprocess) | R package to use QGIS processing algorithms | R | -->
+
+<!-- | [Rsagacmd](https://cran.r-project.org/package=Rsagacmd) | A package for linking R with the open-source SAGA-GIS | R | -->
+
+<!-- | [SpatBox](https://github.com/SpatLyu/spatbox) | A Python Library For GeoSpatial Data Propressing and Modeling | Python | -->

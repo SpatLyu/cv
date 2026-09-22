@@ -1,0 +1,11 @@
+$for(entries)$
+\noindent\textbf{$entries.what$}$if(entries.with)$ --- $entries.with$$endif$$if(entries.when)$\hfill $entries.when$$endif$\par
+$if(entries.where)$\noindent\emph{$entries.where$}\par
+$endif$
+$if(entries.why)$\begin{itemize}
+$for(entries.why)$\item $entries.why$
+$endfor$\end{itemize}
+$endif$
+\medskip
+
+$endfor$

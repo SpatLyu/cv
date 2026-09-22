@@ -1,60 +1,84 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
 %
 % Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
-% 8 February 2019
+% 23 November 2018
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 
-\documentclass[11pt,a4paper,]{moderncv}
+% Specify the location of the included fonts
+\fontdir[fonts/]
 
-% moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
 
-\definecolor{color0}{rgb}{0,0,0}% black
-\definecolor{color1}{HTML}{3873B3}% custom
-\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+\colorlet{awesome}{awesome-red}
 
-\usepackage[scaled=0.86]{DejaVuSansMono}
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Wenbo Lyu}{}
+
+\position{B.Sc. Graduate}
+\address{Hong Kong}
+
+\email{\href{mailto:lyu.geosocial@gmail.com}{\nolinkurl{lyu.geosocial@gmail.com}}}
+\homepage{spatlyu.github.io}
+\orcid{0009-0002-6003-3800}
+\github{SpatLyu}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
 
 \providecommand{\tightlist}{%
 	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\def\donothing#1{#1}
-\def\emaillink#1{#1}
 
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
-\usepackage[scale=0.75,footskip=60pt]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-
-
-% personal data
-\name{}{Wenbo Lv}
-\title{undergraduate}
-\address{Xi'an, Shaanxi}{}{}
-
- % Phone number
-\email{\donothing{\href{mailto:lyu.geosocial@gmail.com}{\nolinkurl{lyu.geosocial@gmail.com}}}}
-\homepage{spatlyu.github.io} % Personal website
-
-
-\social[github]{SpatLyu}
-\social[orcid]{0009-0002-6003-3800}
-
-
-
-% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-
+%------------------------------------------------------------------------------
 
 
 
@@ -94,13 +118,25 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {}
+    {Wenbo Lyu~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
 
 
 
@@ -113,174 +149,165 @@
   spatial causal inference} and \textbf{developing high-performance
   computational tools}, with a primary focus on \emph{R packages}.
 \item
+  I specialize in \emph{data analysis}, \emph{statistical modeling}, and
+  developing open-source analytical tools, including \emph{R packages},
+  using \textbf{R}, \textbf{C++}, and \textbf{Python}, with a strong
+  focus on \emph{spatial analysis}. I actively contribute to the R
+  geospatial community and am dedicated to advancing open-source
+  geospatial software.
+\item
   Currently, my work centers on \textbf{Empirical Dynamic Modeling
-  (EDM)} framework for modeling \emph{dynamic system} and
-  \textbf{Difference-in-Differences (DID)} methods for \emph{event
-  studies}. I am particularly interested in leveraging these approaches
+  (EDM)} framework for modeling \emph{dynamic system},
+  \textbf{information theory} for quantifying \emph{information flow}
+  and \emph{variable interactions}, \textbf{ordinary differential
+  equations (ODEs)} for characterizing \emph{spatiotemporal processes}
+  and \emph{system evolution}, as well as \textbf{counterfactual} and
+  \textbf{potential outcomes} framework for estimating \emph{causal
+  effects}. I am particularly interested in leveraging these approaches
   to address critical challenges in \emph{urban sustainability},
   \emph{climate change mitigation}, and broader global issues.
-\item
-  I possess expertise in \emph{data analysis}, \emph{statistical
-  modeling}, and the development of \emph{R packages} and open-source
-  analytical tools utilizing \textbf{R}, \textbf{C++}, and
-  \textbf{Python}.
-\item
-  I have contributed to the \textbf{development} and
-  \textbf{maintenance} of several open-source spatial analysis tools
-  within the R community and remain dedicated to \textbf{advancing
-  open-source geospatial analysis software}.
 \end{itemize}
 
 \section{Education}\label{education}
 
-\nopagebreak
-    \cventry{2021-2025}{BSc In Geographic Information Science}{Shaanxi Normal University}{Xi'an, Shaanxi}{}{\empty}
+\begin{cventries}
+    \cventry{B.Sc. In Geographic Information Science}{Shaanxi Normal University}{Xi'an, Shaanxi}{2021.8-2025.6}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Research Experience}\label{research-experience}
+
+\begin{cventries}
+    \cventry{Research Assistant}{The Hong Kong Polytechnic University}{Hong Kong}{2026.6-2026.12}{}\vspace{-4.0mm}
+    \cventry{Research Intern}{The Hong Kong University of Science and Technology (Guangzhou)}{Guangzhou, Guangdong}{2024.8-2026.6}{}\vspace{-4.0mm}
+\end{cventries}
 
 \section{Publications}\label{publications}
 
-\phantomsection\label{refs-0ec9cd99dd6c888b81e78fc0c10b8c98}
+\phantomsection\label{refs-d23da96b40208019b6f3580b0fc3c15f}
 \begin{CSLReferences}{0}{0}
-\bibitem[\citeproctext]{ref-lyu2025gdverse}
+\bibitem[\citeproctext]{ref-lyu2026gcmc}
 \CSLLeftMargin{1. }%
+\CSLRightInline{Lyu, W., Dai, S., Song, Y., Zhao, W., Yi, W., Xiao, Y.,
+\& Jia, N. (2026). Measuring causal strengths from spatial
+cross-sectional data with geographical cross mapping cardinality.
+\emph{International Journal of Geographical Information Science}, 1--23.
+\url{https://doi.org/10.1080/13658816.2026.2687121}}
+
+\bibitem[\citeproctext]{ref-lyu2026tEDM}
+\CSLLeftMargin{2. }%
+\CSLRightInline{Lyu, W., Lei, Y., Yi, W., Song, Y., Li, X., Dai, S.,
+Qin, Y., \& Zhao, W. (2026). Causal discovery in urban data with
+temporal empirical dynamic modeling: The R package tEDM.
+\emph{Computers, Environment and Urban Systems}, \emph{127}, 102435.
+\url{https://doi.org/10.1016/j.compenvurbsys.2026.102435}}
+
+\bibitem[\citeproctext]{ref-lyu2025gdverse}
+\CSLLeftMargin{3. }%
 \CSLRightInline{Lv, W., Lei, Y., Liu, F., Yan, J., Song, Y., \& Zhao, W.
-(2025). Gdverse: An r package for spatial stratified heterogeneity
-family. \emph{Transactions in GIS}, \emph{29}(2), 29:e70032.
+(2025). gdverse: An R package for spatial stratified heterogeneity
+family. \emph{Transactions in GIS}, \emph{29}(2), e70032.
 \url{https://doi.org/10.1111/tgis.70032}}
 
 \bibitem[\citeproctext]{ref-lyu2024veg}
-\CSLLeftMargin{2. }%
+\CSLLeftMargin{4. }%
 \CSLRightInline{Lv, W., Liu, F., Cai, K., Cao, Y., Deng, M., Liang, W.,
 Yan, J., \& Wang, G. (2024). Distinguishing the impacts and gradient
 effects of climate change and human activities on vegetation cover in
 the weihe river basin, china. \emph{Journal of Geophysical Research:
-Biogeosciences}, \emph{129}(10).
+Biogeosciences}, \emph{129}(10), e2024JG008297.
 \url{https://doi.org/10.1029/2024jg008297}}
 
+\bibitem[\citeproctext]{ref-li2026grs}
+\CSLLeftMargin{5. }%
+\CSLRightInline{Li, B., Lv, W., Ding, H., Song, Y., \& Zhao, W. (2026).
+New-type urbanization policy, urban expansion, and employment quality in
+chinese cities: Evidence from a quasi-natural experiment in China.
+\emph{GIScience \& Remote Sensing}, \emph{63}(1), 2716413.
+\url{https://doi.org/10.1080/15481603.2026.2716413}}
+
+\bibitem[\citeproctext]{ref-xu2026gcmc_case1}
+\CSLLeftMargin{6. }%
+\CSLRightInline{Xu, L., Shi, H., Lyu, W., Zhang, Y., \& Zhao, H. (2026).
+Beyond correlation: Unveiling the causal link between street-scapes and
+recreational walking/cycling. \emph{Journal of Transport Geography},
+\emph{136}, 104789.
+\url{https://doi.org/10.1016/j.jtrangeo.2026.104789}}
+
 \bibitem[\citeproctext]{ref-chen2025gcrf}
-\CSLLeftMargin{3. }%
+\CSLLeftMargin{7. }%
 \CSLRightInline{Chen, C., Song, Y., Lv, W., Shemery, A., Hampson, K.,
 Yi, W., Zhong, Y., \& Wu, P. (2025). Predicting pavement cracking
 performance using laser scanning and geocomplexity‐enhanced machine
 learning. \emph{Computer-Aided Civil and Infrastructure Engineering}.
 \url{https://doi.org/10.1111/mice.13489}}
 
-\bibitem[\citeproctext]{ref-song2023cuafr}
-\CSLLeftMargin{4. }%
-\CSLRightInline{Song, Z., Liu, F., Lv, W., \& Yan, J. (2023).
-Classification of urban agricultural functional regions and their carbon
-effects at the county level in the pearl river delta, china.
-\emph{Agriculture}, \emph{13}(9).
-\url{https://doi.org/10.3390/agriculture13091734}}
-
-\bibitem[\citeproctext]{ref-song2023cupscos}
-\CSLLeftMargin{5. }%
-\CSLRightInline{Song, Z., Liu, F., \& Lv, W. (2023).
-\emph{Spatiotemporal characteristics and optimization strategies of
-urban-rural development disparities in china's urban agglomerations(in
-chinese)} (pp. 1418--1429). People's Cities, Empowered by Planning -
-Proceedings of the 2023 China Urban Planning Annual Conference (14
-Regional Planning; Urban Economy).
-\url{https://link.cnki.net/doi/10.26914/c.cnkihy.2023.061565}}
-
 \end{CSLReferences}
+
+\vspace{0.1cm}
+
+\emph{Note: Publications under ``Lyu, W.'' and ``Lv, W.'' both refer to
+Wenbo Lyu.}
 
 \section{Honor}\label{honor}
 
-\nopagebreak
-    \cventry{2024.12}{Longi Non-Education Major Scholarship}{}{}{}{\empty}
-    \cventry{2024.11}{First Prize in the 13th National University Student GIS Application Skills Competition}{}{}{}{\empty}
-    \cventry{2024.06}{National University Student Innovation and Entrepreneurship Training Program Qualified Completion}{}{}{}{\empty}
-    \cventry{2023.12}{Grand Prize in the 12th National University Student GIS Application Skills Competition}{}{}{}{\empty}
-    \cventry{2023.11}{First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition}{}{}{}{\empty}
-    \cventry{2023.12}{Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources}{}{}{}{\empty}
-    \cventry{2021.10}{Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University}{}{}{}{\empty}
+\begin{cventries}
+    \cventry{Longi Non-Education Major Scholarship}{}{}{2024.12}{}\vspace{-4.0mm}
+    \cventry{First Prize in the 13th National University Student GIS Application Skills Competition}{}{}{2024.11}{}\vspace{-4.0mm}
+    \cventry{National University Student Innovation and Entrepreneurship Training Program Qualified Completion}{}{}{2024.06}{}\vspace{-4.0mm}
+    \cventry{Grand Prize in the 12th National University Student GIS Application Skills Competition}{}{}{2023.12}{}\vspace{-4.0mm}
+    \cventry{First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition}{}{}{2023.11}{}\vspace{-4.0mm}
+    \cventry{Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources}{}{}{2023.12}{}\vspace{-4.0mm}
+    \cventry{Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University}{}{}{2021.10}{}\vspace{-4.0mm}
+\end{cventries}
 
 \section{Unpublished}\label{unpublished}
 
-\nopagebreak
-    \cventry{First Author}{Measuring causal associations by geographical cross mapping cardinality}{Submitted to IJGIS, currently under review}{}{}{\empty}
-    \cventry{Third Author}{Agricultural policies reshape cropland patterns with varying impacts - a case of soybeans from Heilongjiang Province}{Submitted to Land Use Policy, currently under review}{}{}{\empty}
-    \cventry{First Author}{Decomposing spatial causality through mutual information}{Plan}{}{}{\empty}
-    \cventry{First Author}{On the role of explicit spatial information in stratified heterogeneity}{Plan}{}{}{\empty}
-    \cventry{First Author}{Geocomplexity Mitigates Spatial Bias}{Plan}{}{}{\empty}
+\begin{cventries}
+    \cventry{Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships}{Submitted to AAAG, currently under third-round review}{}{Co-First Author (1st)}{}\vspace{-4.0mm}
+    \cventry{Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data}{Submitted to IJGIS, currently under second-round review}{}{Co-First Author (2nd)}{}\vspace{-4.0mm}
+    \cventry{Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data}{Submitted to Comms Phys, currently in revision}{}{First Author}{}\vspace{-4.0mm}
+    \cventry{Unveiling interaction between spatial processes with information decomposition}{In writing}{}{First Author}{}\vspace{-4.0mm}
+    \cventry{Pattern Causality for Detecting Interactions with the R Package pc}{In writing}{}{First Author}{}\vspace{-4.0mm}
+    \cventry{coupling: Coupling Coordination Analysis in R}{Plan}{}{First Author}{}\vspace{-4.0mm}
+    \cventry{Measuring spatial stratified heterogeneity via information imbalance}{Plan}{}{First Author}{}\vspace{-4.0mm}
+    \cventry{Spatial causal discovery under latent confounders via deep orthogonal representation learning}{Plan}{}{First Author}{}\vspace{-4.0mm}
+\end{cventries}
 
 \section{Developed Spatial Analysis
 Toolkit}\label{developed-spatial-analysis-toolkit}
 
-\begin{itemize}
-\item
-  \textbf{\href{https://github.com/stscl/spEDM}{spEDM}}\\
-  Inferring causation from spatial cross-sectional data through
-  empirical dynamic modeling (EDM), with methodological extensions
-  including geographical convergent cross mapping, geographical cross
-  mapping cardinality and spatially convergent partial cross mapping, as
-  well as the spatial granger causality. Data I/O is handled at the
-  \textbf{R} level, while the rest is fully implemented using
-  \textbf{modern C++}.
-\item
-  \textbf{\href{https://github.com/stscl/gdverse}{gdverse}}\\
-  Detecting spatial associations via spatial stratified heterogeneity,
-  accounting for spatial dependencies, interpretability, complex
-  interactions, and robust stratification. In addition, it supports the
-  spatial stratified heterogeneity family described in Lv et
-  al.~(2025)\url{doi:10.1111/tgis.70032}. Developed using \textbf{R},
-  \textbf{C++}, and \textbf{Python}.
-\item
-  \textbf{\href{https://github.com/stscl/sesp}{sesp}}\\
-  Implements the \emph{Spatially Explicit Stratified Power} model, a
-  robust framework for spatial analysis combining stratification and
-  statistical power. Written in \textbf{R} and \textbf{C++}.
-\item
-  \textbf{\href{https://github.com/ausgis/geocomplexity}{geocomplexity}}\\
-  Focuses on mitigating spatial biases by leveraging geographical
-  complexity. Combines computational efficiency with flexibility,
-  developed in \textbf{C++}, \textbf{R}, and \textbf{C}.
-\item
-  \textbf{\href{https://github.com/stscl/cisp}{cisp}}\\
-  Introduces a novel \emph{Correlation Indicator Based on Spatial
-  Patterns} for measuring spatial correlations with high precision.
-  Written in \textbf{R}.
-\item
-  \textbf{\href{https://github.com/ausgis/geosimilarity}{geosimilarity}}\\
-  Provides methods for calculating \emph{Geographically Optimal
-  Similarity}, enabling better spatial predict. Developed in \textbf{R}.
-\item
-  \textbf{\href{https://github.com/ausgis/GD}{GD}}\\
-  Implements \emph{Geographical Detectors}, a toolkit for assessing
-  spatial factors influencing heterogeneity. Fully developed in
-  \textbf{R}.
-\item
-  \textbf{\href{https://github.com/stscl/sdsfun}{sdsfun}}\\
-  Adds complementary features for \emph{Spatial Data Science}, providing
-  user-friendly functionalities for geospatial research. Developed using
-  \textbf{C++} and \textbf{R}.
-\item
-  \textbf{\href{https://github.com/stscl/geocn}{geocn}}\\
-  Simplifies the process of loading and managing spatial datasets of
-  China, supporting research with localized datasets. Developed in
-  \textbf{R}.
-\item
-  \textbf{\href{https://github.com/r-spatial/qgisprocess}{qgisprocess}}\\
-  Offers an \textbf{R} interface to \emph{QGIS processing algorithms},
-  enabling seamless integration of QGIS functionalities into R
-  workflows.
-\item
-  \textbf{\href{https://github.com/SpatLyu/spEcula}{spEcula}}\\
-  Provides advanced methods for \emph{Spatial Prediction} in \textbf{R},
-  supporting applications ranging from environmental modeling to spatial
-  econometrics.
-\item
-  \textbf{\href{https://github.com/SpatLyu/tidyrgeoda}{tidyrgeoda}}\\
-  Offers a tidy interface for \emph{rgeoda}, bridging geospatial
-  analysis and tidyverse workflows to streamline data handling and
-  modeling in \textbf{R}.
-\end{itemize}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1325}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6988}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1687}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Package
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Language
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\href{https://cran.r-project.org/package=spEDM}{spEDM} & Spatial
+Empirical Dynamic Modeling & C++, R \\
+\href{https://cran.r-project.org/package=tEDM}{tEDM} & Temporal
+Empirical Dynamic Modeling & C++, R \\
+\href{https://github.com/stscl/infoxtr}{infoxtr} & Information-Theoretic
+Measures for Revealing Variable Interactions & C++, R \\
+\href{https://github.com/stscl/pc}{pc} & Pattern Causality Analysis &
+C++, R \\
+\href{https://cran.r-project.org/package=gdverse}{gdverse} & Analysis of
+Spatial Stratified Heterogeneity & R, C++, Python \\
+\href{https://cran.r-project.org/package=sdsfun}{sdsfun} & Spatial Data
+Science Complementary Features & R, C++ \\
+\href{https://github.com/stscl/coupling}{coupling} & Coupling
+Coordination Analysis & C++, R \\
+\end{longtable}
+
 
 
 \end{document}
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
-\end{document}
-
-
-%% end of file `template.tex'.
