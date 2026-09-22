@@ -13,6 +13,7 @@ date: today
 date-format: "MMMM YYYY"
 headcolor: "000088"
 format: hyndmancv-pdf
+bibliography: lyu_publications.bib
 ---
 
 ```{r}
@@ -96,7 +97,8 @@ tibble::tribble(
 #| output: asis
 
 #papers = RefManageR::ReadBib("./lyu_publications.bib") 
-bibtex::read.bib('./lyu_publications.bib')
+papers = bibtex::read.bib('./lyu_publications.bib')
+cat(paste0("[@", names(papers), "]", collapse = "; "))
 ```
 
 \vspace{0.1cm}
