@@ -12,12 +12,14 @@ github: SpatLyu
 date: today
 date-format: "MMMM YYYY"
 headcolor: "000088"
-format: hyndmancv-pdf
-header-includes:
-  - \usepackage[style=apa, backend=biber, sorting=none]{biblatex}
-  - \addbibresource{lyu_publications.bib}
-  - \setlength{\bibhang}{0pt}
-  - \def\bibfont{\raggedright}
+format: cv-pdf
+bibliography: lyu_publications.bib
+# header-includes:
+#   #- \usepackage[style=apa, backend=biber, sorting=none]{biblatex}
+#   - \usepackage[style=numeric, sorting=none]{biblatex}
+#   - \addbibresource{lyu_publications.bib}
+#   - \setlength{\bibhang}{0pt}
+#   - \def\bibfont{\raggedright}
 ---
 
 \newcounter{bib}
