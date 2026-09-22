@@ -36,10 +36,10 @@ tibble::tribble(
 ```{r}
 tibble::tribble(
   ~ Position, ~ Duration, ~ Institution, ~ Where,
-    "Research Assistant", "2026.6-2026.11", "The Hong Kong Polytechnic University", "Hong Kong",
+    "Research Assistant", "2026.6-2026.12", "The Hong Kong Polytechnic University", "Hong Kong",
   # "Research Assistant", "2025.9-2026.6", "Eastern Institute of Technology, Ningbo", "Ningbo, Zhejiang",
-  "Research Intern", "2024.8-2026.6", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong",
-) %>%
+  "Research Intern", "2024.8-2026.6", "The Hong Kong University of Science and Technology (Guangzhou)", "Guangzhou, Guangdong"
+) |> 
   detailed_entries(Position, Duration, Institution, Where)
 ```
 
@@ -65,7 +65,7 @@ tibble::tribble(
   "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", "2023.11",
   "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition, China Society of Natural Resources", "2023.12",
   "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", "2021.10",
-) %>%
+) |> 
   detailed_entries(Awards,Date)
 ```
 
@@ -90,7 +90,7 @@ tibble::tribble(
   "First Author", "Plan",
   "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
   "First Author", "Plan",
-) %>%
+) |> 
   detailed_entries(Name, Role, Status)
 ```
 
