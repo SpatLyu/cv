@@ -75,7 +75,7 @@ tibble::tribble(
 tibble::tribble(
   ~ Name, ~ Role, ~ Status,
   "Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships",
-  "Co-First Author (1st)", "Submitted to AAAG, currently under second-round review",
+  "Co-First Author (1st)", "Submitted to AAAG, currently under third-round review",
   "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data",
   "Co-First Author (2nd)", "Submitted to IJGIS, currently under second-round review",
   "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data",
@@ -89,7 +89,7 @@ tibble::tribble(
   "Measuring spatial stratified heterogeneity via information imbalance",
   "First Author", "Plan",
   "Spatial causal discovery under latent confounders via deep orthogonal representation learning",
-  "First Author", "Plan",
+  "First Author", "Plan"
 ) |> 
   detailed_entries(Name, Role, Status)
 ```
