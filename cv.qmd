@@ -14,9 +14,13 @@ date-format: "MMMM YYYY"
 headcolor: "000088"
 format: hyndmancv-pdf
 header-includes:
-  - \usepackage[style=phys,sorting=none]{biblatex}
+  - \usepackage[style=apa, backend=biber, sorting=none]{biblatex}
   - \addbibresource{lyu_publications.bib}
+  - \setlength{\bibhang}{0pt}
+  - \def\bibfont{\raggedright}
 ---
+
+\newcounter{bib}
 
 ```{r}
 #| label: setup
