@@ -67,8 +67,8 @@ baretable = \(
 #| output: "asis"
 
 tibble::tribble(
-  ~Degree, ~Institution, ~Year ,
-  "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  "2025",
+    ~Degree, ~Institution, ~Year ,
+    "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  "2025",
 ) |>
   baretable()
 ```
@@ -80,10 +80,10 @@ tibble::tribble(
 #| output: "asis"
 
 tibble::tribble(
-  ~Duration, ~Position,
-  "2026.6- ", "Research Assistant, The Hong Kong Polytechnic University", 
-  "2025.9-2026.6", "Research Assistant, Eastern Institute of Technology, Ningbo",
-  "2024.8-2025.8", "Research Intern, The Hong Kong University of Science and Technology (Guangzhou)", 
+    ~Duration, ~Position,
+    "2026.6- ", "Research Assistant, The Hong Kong Polytechnic University", 
+    "2025.9-2026.6", "Research Assistant, Eastern Institute of Technology, Ningbo",
+    "2024.8-2025.8", "Research Intern, The Hong Kong University of Science and Technology (Guangzhou)", 
 ) |>
   baretable()
 ```
@@ -111,3 +111,21 @@ cat("\\end{refsection}")
 \vspace{0.1cm}
 
 *Note: Publications under "Lyu, W." and "Lv, W." both refer to Wenbo Lyu.*
+
+# Selected awards and honours
+
+```{r}
+#| label: awards
+#| output: "asis"
+
+tibble::tribble(
+    ~Year, ~Award,
+    "2024", "Longi Non-Education Major Scholarship", 
+    "2024", "First Prize in the 13th National University Student GIS Application Skills Competition", 
+    "2023", "Grand Prize in the 12th National University Student GIS Application Skills Competition", 
+    "2023", "First Prize in the Second National University Student Ecological Environment Management Research Innovation Competition", 
+    "2023", "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition", 
+    "2021", "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", 
+) |>
+  baretable()
+```
