@@ -1,9 +1,0 @@
-$-- A category paired with its members, given either as one string in `with` or
-$-- as a list in `why`. The category is the label, so it takes the left column
-$-- in place of a date, and the column is measured from the categories.
-\begin{cvlisting}
-$for(entries)$\cvmeasureskill{$entries.what$}$endfor$
-$for(entries)$
-\cvskillline{$entries.what$}{$if(entries.with)$$entries.with$$else$$for(entries.why)$$entries.why$$sep$, $endfor$$endif$}
-$endfor$
-\end{cvlisting}
