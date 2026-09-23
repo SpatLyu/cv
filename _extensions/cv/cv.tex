@@ -166,14 +166,16 @@ $endif$
 \DeclareFieldFormat[article]{pages}{#1}
 \DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
 \DeclareFieldFormat[article]{url}{}
-\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+% \DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{volume}{\mkbibitalic{#1}}
 \DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
 \DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
 \DeclareFieldFormat[inproceedings]{title}{#1}
 \DeclareFieldFormat[review]{number}{\mkbibparens{#1}}
 \DeclareFieldFormat[review]{pages}{#1}
 \DeclareFieldFormat[review]{title}{\MakeCapital{#1}}
-\DeclareFieldFormat[review]{volume}{\mkbibbold{#1}}
+% \DeclareFieldFormat[review]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[review]{volume}{\mkbibitalic{#1}}
 % No dot before number of articles
 \usepackage{xpatch}
 \xpatchbibmacro{volume+number+eid}{\setunit*{\adddot}}{}{}{}
