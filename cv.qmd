@@ -150,3 +150,35 @@ tibble::tribble(
 ) |>
     baretable()
 ```
+
+# Software (R packages)
+
+```{r}
+#| label: packages-table
+#| echo: false
+#| warning: false
+
+rpkgs_df = data.frame(
+    Package = c(
+        "\\texttt{spEDM}", "\\texttt{tEDM}", "\\texttt{infoxtr}", 
+        "\\texttt{pc}", "\\texttt{gdverse}", "\\texttt{sdsfun}", "\\texttt{coupling}"
+    ),
+    Description = c(
+        "\\href{https://cran.r-project.org/package=spEDM}{Spatial Empirical Dynamic Modeling}",
+        "\\href{https://cran.r-project.org/package=tEDM}{Temporal Empirical Dynamic Modeling}",
+        "\\href{https://github.com/stscl/infoxtr}{Information-Theoretic Measures for Revealing Variable Interactions}",
+        "\\href{https://github.com/stscl/pc}{Pattern Causality Analysis}",
+        "\\href{https://cran.r-project.org/package=gdverse}{Analysis of Spatial Stratified Heterogeneity}",
+        "\\href{https://cran.r-project.org/package=sdsfun}{Spatial Data Science Complementary Features}",
+        "\\href{https://github.com/stscl/coupling}{Coupling Coordination Analysis}"
+    )
+)
+
+knitr::kable(
+  rpkgs_df, 
+  format = "latex",    
+  col.names = NULL,    
+  escape = FALSE,  
+  booktabs = TRUE 
+)
+```
