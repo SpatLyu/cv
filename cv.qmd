@@ -16,12 +16,6 @@ format:
     cv-pdf:
         show-doi: true
 bibliography: lyu_publications.bib
-# header-includes:
-#   #- \usepackage[style=apa, backend=biber, sorting=none]{biblatex}
-#   - \usepackage[style=numeric, sorting=none]{biblatex}
-#   - \addbibresource{lyu_publications.bib}
-#   - \setlength{\bibhang}{0pt}
-#   - \def\bibfont{\raggedright}
 ---
 
 \newcounter{bib}
