@@ -161,20 +161,20 @@ data.frame(
     Package = c(
         "\\href{https://cran.r-project.org/package=spEDM}{\\texttt{spEDM}}", 
         "\\href{https://cran.r-project.org/package=tEDM}{\\texttt{tEDM}}", 
-        "\\href{https://cran.r-project.org/package=infoxtr}{\\texttt{infoxtr}}", 
         "\\href{https://cran.r-project.org/package=pc}{\\texttt{pc}}", 
         "\\href{https://cran.r-project.org/package=gdverse}{\\texttt{gdverse}}", 
         "\\href{https://cran.r-project.org/package=sdsfun}{\\texttt{sdsfun}}", 
-        "\\href{https://cran.r-project.org/package=coupling}{\\texttt{coupling}}"
+        "\\href{https://cran.r-project.org/package=coupling}{\\texttt{coupling}}",
+        "\\href{https://cran.r-project.org/package=infoxtr}{\\texttt{infoxtr}}"
     ),
     Description = c(
         "Spatial Empirical Dynamic Modeling",
         "Temporal Empirical Dynamic Modeling",
-        "Information-Theoretic Measures for Revealing Variable Interactions",
         "Pattern Causality Analysis",
         "Analysis of Spatial Stratified Heterogeneity",
         "Spatial Data Science Complementary Features",
-        "Coupling Coordination Analysis"
+        "Coupling Coordination Analysis",
+        "Information-Theoretic Measures for Revealing Variable Interactions"
     )
 ) |>
     baretable()
