@@ -70,7 +70,7 @@ tibble::tribble(
     ~Degree, ~Institution, ~Year ,
     "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  "2025",
 ) |>
-  baretable()
+    baretable()
 ```
 
 # Research Experience <!-- Employment history -->
@@ -85,7 +85,7 @@ tibble::tribble(
     "2025.9-2026.6", "Research Assistant, Eastern Institute of Technology, Ningbo",
     "2024.8-2025.8", "Research Intern, The Hong Kong University of Science and Technology (Guangzhou)", 
 ) |>
-  baretable()
+    baretable()
 ```
 
 # Research interests
@@ -119,7 +119,7 @@ cat("\\end{refsection}")
 #| output: asis
 
 tibble::tribble(
-    ~Name, ~Role, ~Status,
+    ~Title, ~Role, ~Status,
     "Quantifying pairwise directional influence between spatial variables: A reconstruction-based approach to asymmetric relationships", "Co-First Author (1st)", "Submitted to AAAG, currently under third-round review",
     "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data", "Co-First Author (2nd)", "Submitted to IJGIS, currently under second-round review",
     "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data", "First Author", "Submitted to Comms Phys, currently in revision",
@@ -129,7 +129,8 @@ tibble::tribble(
     "Measuring spatial stratified heterogeneity via information imbalance", "First Author", "Plan",
     "Spatial causal discovery under latent confounders via deep orthogonal representation learning", "First Author", "Plan",
 ) |> 
-  baretable()
+    dplyr::select(Title) |> 
+    baretable()
 ```
 
 # Selected awards and honours
@@ -147,5 +148,5 @@ tibble::tribble(
     "2023", "Second Prize of the 5th 'Guodi Cup' National College Student Natural Resource Science and Technology Competition", 
     "2021", "Outstanding Individual in Military Training Publicity for College Students, Shaanxi Normal University", 
 ) |>
-  baretable()
+    baretable()
 ```
