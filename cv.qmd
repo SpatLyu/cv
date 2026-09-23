@@ -90,9 +90,8 @@ tibble::tribble(
 
 # Research interests
 
-- **Focus:** *Spatial causal inference* & high-performance computational tool development (*R packages*).
-- **Methods:** *Empirical Dynamic Modeling (EDM)*, *information theory*, *ODEs*, and *counterfactual frameworks* for quantifying complex variable interactions.
-- **Domains:** *Urban sustainability*, *climate change mitigation*, and global challenges.
+- **Goal:** Understanding complex systems via observational data (temporal/spatial/spatiotemporal data).
+- **Methods:** *Information theory*, *information geometry*, *optimal transport*, *dynamic systems*, and *generative models* for *spatial causal inference*.
 - **Tech Stack:** *R, C++, Python* (Spatial analysis & open-source geospatial software).
 
 # Selected research papers
