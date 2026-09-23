@@ -12,7 +12,9 @@ github: SpatLyu
 date: today
 date-format: "MMMM YYYY"
 headcolor: "000088"
-format: cv-pdf
+format: 
+    cv-pdf:
+        show-doi: true
 bibliography: lyu_publications.bib
 # header-includes:
 #   #- \usepackage[style=apa, backend=biber, sorting=none]{biblatex}

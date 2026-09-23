@@ -147,8 +147,18 @@ $endif$
 \fi
 $endif$
 
-\usepackage[style=authoryear-comp, maxnames=99, uniquename = init, giveninits=true, terseinits=true, dashed=false, doi=false, isbn=false, bibencoding=utf8, backend=biber, sorting=none]{biblatex}
+\usepackage[style=authoryear-comp, maxnames=99, uniquename = init, giveninits=true, terseinits=true, dashed=false, doi=$if(show-doi)$true$else$false$endif$, isbn=false, bibencoding=utf8, backend=biber, sorting=none]{biblatex}
 
+$if(show-doi)$
+\DeclareFieldFormat{doi}{%
+  \mkbibacro{DOI}\addcolon\space
+  \ifhyperref
+    {\href{https://doi.org/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}
+$endif$
+
+\DeclareNameAlias{sortname}{family-given}
+\DeclareNameAlias{default}{family-given}
 \DeclareFieldFormat{extradate}{}
 \DeclareFieldFormat{shorthandwidth}{#1}
 \DeclareFieldFormat{url}{\url{#1}}

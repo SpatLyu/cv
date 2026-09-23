@@ -6,4 +6,5 @@ contributes:
     pdf:
       template: cv.tex
       pdf-engine: pdflatex
+      show-doi: false
       echo: false
