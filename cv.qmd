@@ -155,30 +155,27 @@ tibble::tribble(
 
 ```{r}
 #| label: packages-table
-#| echo: false
-#| warning: false
+#| output: "asis"
 
-rpkgs_df = data.frame(
+data.frame(
     Package = c(
-        "\\texttt{spEDM}", "\\texttt{tEDM}", "\\texttt{infoxtr}", 
-        "\\texttt{pc}", "\\texttt{gdverse}", "\\texttt{sdsfun}", "\\texttt{coupling}"
+        "\\href{https://cran.r-project.org/package=spEDM}{\\texttt{spEDM}}", 
+        "\\href{https://cran.r-project.org/package=tEDM}{\\texttt{tEDM}}", 
+        "\\href{https://cran.r-project.org/package=infoxtr}{\\texttt{infoxtr}}", 
+        "\\href{https://cran.r-project.org/package=pc}{\\texttt{pc}}", 
+        "\\href{https://cran.r-project.org/package=gdverse}{\\texttt{gdverse}}", 
+        "\\href{https://cran.r-project.org/package=sdsfun}{\\texttt{sdsfun}}", 
+        "\\href{https://cran.r-project.org/package=coupling}{\\texttt{coupling}}"
     ),
     Description = c(
-        "\\href{https://cran.r-project.org/package=spEDM}{Spatial Empirical Dynamic Modeling}",
-        "\\href{https://cran.r-project.org/package=tEDM}{Temporal Empirical Dynamic Modeling}",
-        "\\href{https://github.com/stscl/infoxtr}{Information-Theoretic Measures for Revealing Variable Interactions}",
-        "\\href{https://github.com/stscl/pc}{Pattern Causality Analysis}",
-        "\\href{https://cran.r-project.org/package=gdverse}{Analysis of Spatial Stratified Heterogeneity}",
-        "\\href{https://cran.r-project.org/package=sdsfun}{Spatial Data Science Complementary Features}",
-        "\\href{https://github.com/stscl/coupling}{Coupling Coordination Analysis}"
+        "Spatial Empirical Dynamic Modeling",
+        "Temporal Empirical Dynamic Modeling",
+        "Information-Theoretic Measures for Revealing Variable Interactions",
+        "Pattern Causality Analysis",
+        "Analysis of Spatial Stratified Heterogeneity",
+        "Spatial Data Science Complementary Features",
+        "Coupling Coordination Analysis"
     )
-)
-
-knitr::kable(
-  rpkgs_df, 
-  format = "latex",    
-  col.names = NULL,    
-  escape = FALSE,  
-  booktabs = TRUE 
-)
+) |>
+    baretable()
 ```
