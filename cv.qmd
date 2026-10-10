@@ -159,22 +159,22 @@ tibble::tribble(
 
 data.frame(
     Package = c(
+        "\\href{https://cran.r-project.org/package=infoxtr}{\\texttt{infoxtr}}",
         "\\href{https://cran.r-project.org/package=spEDM}{\\texttt{spEDM}}", 
         "\\href{https://cran.r-project.org/package=tEDM}{\\texttt{tEDM}}", 
         "\\href{https://cran.r-project.org/package=pc}{\\texttt{pc}}", 
-        "\\href{https://cran.r-project.org/package=gdverse}{\\texttt{gdverse}}", 
-        "\\href{https://cran.r-project.org/package=sdsfun}{\\texttt{sdsfun}}", 
+        "\\href{https://cran.r-project.org/package=gdverse}{\\texttt{gdverse}}",
         "\\href{https://cran.r-project.org/package=coupling}{\\texttt{coupling}}",
-        "\\href{https://cran.r-project.org/package=infoxtr}{\\texttt{infoxtr}}"
+        "\\href{https://cran.r-project.org/package=sdsfun}{\\texttt{sdsfun}}"
     ),
     Description = c(
+        "Information-Theoretic Measures for Revealing Variable Interactions",
         "Spatial Empirical Dynamic Modeling",
         "Temporal Empirical Dynamic Modeling",
         "Pattern Causality Analysis",
         "Analysis of Spatial Stratified Heterogeneity",
-        "Spatial Data Science Complementary Features",
         "Coupling Coordination Analysis",
-        "Information-Theoretic Measures for Revealing Variable Interactions"
+        "Spatial Data Science Complementary Features"
     )
 ) |>
     baretable()
