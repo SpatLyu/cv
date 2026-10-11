@@ -124,9 +124,9 @@ tibble::tribble(
     "Spatial Pattern Entropy: A Symbolic Measure for Continuous Spatial Data", "Co-First Author (2nd)", "Submitted to IJGIS, currently under second-round review",
     "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data", "First Author", "Submitted to Comms Phys, currently under first-round review",
     "Unveiling interactions between spatial processes with information decomposition", "First Author", "Submitted to IJGIS,currently with editor",
+    "Enhancing spatial stratified heterogeneity measurement for multivariate continuous data via distance ranks", "First Author", "Plan",
     "Pattern Causality for Detecting Interactions with the R Package pc", "First Author", "In writing",
     "coupling: Coupling Coordination Analysis in R", "First Author", "Plan",
-    "Enhancing spatial stratified heterogeneity measurement for multivariate continuous data via distance ranks", "First Author", "Plan",
     "Spatial causal discovery under latent confounders via deep orthogonal representation learning", "First Author", "Plan",
 ) |> 
     dplyr::select(Title) |> 
