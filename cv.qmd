@@ -53,9 +53,7 @@ baretable = \(
       floating = FALSE,
       size = size,
       add.to.row = add.to.row,
-      sanitize.text.function = function(x) {
-        x
-      }
+      sanitize.text.function = \(.x) .x
     )
 }
 ```
@@ -68,7 +66,7 @@ baretable = \(
 
 tibble::tribble(
     ~Degree, ~Institution, ~Year ,
-    "B.Sc. In Geographic Information Science", "Shaanxi Normal University",  "2025",
+    "B.Sc. In GIScience", "Shaanxi Normal University",  "2025",
 ) |>
     baretable()
 ```
