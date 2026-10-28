@@ -123,7 +123,7 @@ tibble::tribble(
     "Spatially convergent partial cross mapping for identifying direct causal influence in cross-sectional data", "First Author", "Submitted to Comms Phys, currently under first-round review",
     "Unveiling interactions between spatial processes with information decomposition", "First Author", "Submitted to IJGIS, currently under first-round review",
     "Enhancing spatial stratified heterogeneity measurement for multivariate continuous data via distance ranks", "First Author", "In writing",
-    "Pattern Causality for Detecting Interactions with the R Package pc", "First Author", "Plan",
+    "Pattern Causality for Unveiling Interactions with the R Package pc", "First Author", "Plan",
     "coupling: Coupling Coordination Analysis in R", "First Author", "Plan",
     "Spatial causal discovery under latent confounders via deep orthogonal representation learning", "First Author", "Plan",
 ) |> 
