@@ -89,7 +89,7 @@ tibble::tribble(
 # Research interests
 
 - **Goal:** Understanding complex systems via observational data (temporal/spatial/spatiotemporal data).
-- **Methods:** *Information theory*, *dynamic systems*, *persisent homology*, *information geometry*, *optimal transport*, and *generative models* for *spatial causal inference*.
+- **Methods:** *information theory*, *nonlinear dynamics*, *complex network* and *generative models* for *data-drivened spatio-temporal process understanding*.
 - **Tech Stack:** *R, C++, Python* (spatial analysis & open-source geospatial software).
 
 # Selected research papers
