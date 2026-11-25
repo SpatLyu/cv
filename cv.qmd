@@ -118,7 +118,7 @@ cat("\\end{refsection}")
 
 tibble::tribble(
     ~Title, ~Role, ~Status,
-    "Unveiling interactions between spatial processes with information decomposition", "First Author", "Submitted to IJGIS, currently under first-round review",
+    "Unveiling interactions between spatial processes with information decomposition", "First Author", "In writing",
     "Enhancing spatial stratified heterogeneity measurement for multivariate continuous data via distance ranks", "First Author", "In writing",
     "Pattern Causality for Unveiling Interactions with the R Package pc", "First Author", "Plan",
     "coupling: Coupling Coordination Analysis in R", "First Author", "Plan",
