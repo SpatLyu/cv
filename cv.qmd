@@ -80,7 +80,7 @@ tibble::tribble(
 tibble::tribble(
     ~Duration, ~Position,
     "2026.6- ", "Research Assistant, The Hong Kong Polytechnic University", 
-    "2025.9-2026.6", "Research Assistant, Eastern Institute of Technology, Ningbo",
+    "2025.9-2026.5", "Research Assistant, Eastern Institute of Technology, Ningbo",
     "2024.8-2025.8", "Research Intern, The Hong Kong University of Science and Technology (Guangzhou)", 
 ) |>
     baretable()
